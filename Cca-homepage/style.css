@@ -1,0 +1,192 @@
+/* 
+color scheme:
+    #ec1c23 as Red
+    #1d2671 as Blue
+    #f16529 as Orange
+    #f5f7f1 as White
+    #ccc as Light grey
+    #6d6e71 as Dark grey
+
+font-familiy:
+    proxima nova
+font-weight: 
+*/
+
+/* GENERAL */
+#homepage body {
+    font-family: proxima nova, sans-serif;
+    font-weight: 200;
+}
+
+/* TODO: Define h1 default size  */
+
+#homepage h2 {
+    font-size: 82px;     
+}
+
+#homepage h3 {
+    font-size: 42px;
+}
+
+#homepage h4 {
+    font-size: 18px;    
+}
+
+#homepage h5 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ec1c23;
+    font-weight: bold;
+}
+
+#homepage p {
+    font-size: 16px;
+}
+
+#homepage .card-section {
+    padding: 100px 0;
+}
+
+/* NAVBAR */
+#homepage #navbar {
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 0 100px 100px 120px;
+    font-size: 12px;
+}
+
+#homepage #navbar a {
+    color: #f5f7f1;
+    margin-right: 35px;
+}
+
+#homepage #navbar .btn {
+    background-color: #f5f7f1;
+    border: 0;
+    color: #ec1c23;
+    padding: 4px 7px 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#homepage #navbar .navbar-toggler {
+    color: #f5f7f1;
+}
+
+/* FIRST CARD */
+#homepage .bluered-card {
+    /* For browsers that do not support gradients */
+    background: #ec1c23;
+    
+    background: -webkit-linear-gradient(#ec1c23, #1d2671);
+    background: -o-linear-gradient(#ec1c23, #1d2671);
+    background: -moz-linear-gradient(#ec1c23, #1d2671);
+    background: linear-gradient(#ec1c23, #1d2671);
+    
+    padding-bottom: 100px;
+    color: #f5f7f1;
+}
+
+#homepage .bluered-card h3 {
+    padding-top: 100px;
+}
+
+#homepage .bluered-card h4 {
+    padding: 5px 0 300px;
+}
+
+#homepage .card-title {
+    text-align: center;
+}
+
+#homepage .img-triangle {
+    padding-top: 60px;
+}
+
+/* SECOND CARD */
+#homepage .redorange-card {
+    /* For browsers that do not support gradients */
+    background: #f16529;
+    
+    background: -webkit-linear-gradient(#f16529, #ec1c23);
+    background: -o-linear-gradient(#f16529, #ec1c23);
+    background: -moz-linear-gradient(#f16529, #ec1c23);
+    background: linear-gradient(#f16529, #ec1c23);
+
+    padding: 100px 0;
+    color: #f5f7f1;
+}
+
+#homepage .redorange-card a {
+    color: #f5f7f1;
+    font-weight: 500; 
+}
+
+#homepage .redorange-card .text-row-orangecard {
+    padding-top: 200px;
+}
+
+/* THIRD CARD */
+#homepage .white-card {
+    text-align: center;
+    color: #ec1c23;
+}
+
+#homepage .white-card .text-row-whitecard {
+    padding-top: 100px;
+}
+
+/* CALL TO ACTION CARD */
+/* Inherits backgrouds and link colors from SECOND CARD */
+#homepage .call-to-action-card {
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* FOOTER */
+#homepage .footer {
+    /* For browsers that do not support gradients */
+    background: #f5f7f1;
+
+    background: -webkit-linear-gradient(#f5f7f1, #ccc);
+    background: -o-linear-gradient(#f5f7f1, #ccc);
+    background: -moz-linear-gradient(#f5f7f1, #ccc));
+    background: linear-gradient(#f5f7f1, #ccc);
+
+    list-style-type: none;
+}
+
+#homepage .footer a {
+    color: #6d6e71;
+    font-size: 12px; 
+}
+
+#homepage .footer p {
+    margin-bottom: 0;
+    color: #6d6e71;
+    font-size: 12px;
+}
+
+#homepage .footer ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.25em;
+    color: #ec1c23;
+}
+
+#homepage .footer .social-icons {
+    margin: 10px 0 0 0;
+}
+
+#homepage .footer .copyright a {
+    font-size: 10px;
+}
+
+#homepage .footer .copyright p {
+    font-size: 10px;
+}
+
+#homepage .footer .logo {
+    padding: 0 0 20px;
+}

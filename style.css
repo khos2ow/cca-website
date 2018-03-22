@@ -13,153 +13,200 @@ font-weight:
 */
 
 /* GENERAL */
-
-body {
+#homepage body {
     font-family: proxima nova, sans-serif;
     font-weight: 200;
 }
-.card-section {
-    padding: 100px 0;
-}
 
-h2 {
+/* TODO: Define h1 default size  */
+
+#homepage h2 {
     font-size: 82px;     
 }
 
-h3 {
+#homepage h3 {
     font-size: 42px;
 }
 
-h4 {
+#homepage h4 {
     font-size: 18px;    
 }
 
-h5 {
+#homepage h5 {
     font-size: 12px;
     text-transform: uppercase;
     color: #ec1c23;
     font-weight: bold;
 }
-p {
+
+#homepage p {
     font-size: 16px;
 }
 
-/* NAVBAR */
-
-.navbar a {
-    color: #f5f7f1;
-    margin-right: 35px;
+#homepage .card-section {
+    padding: 100px 0;
 }
 
-.navbar {
+/* NAVBAR */
+#navbar {
     background-color: transparent;
     text-transform: uppercase;
     padding: 0 100px 100px 120px;
     font-size: 12px;
 }
+.nav-item {
+    margin-right: 35px;
+}
+#navbar a {
+    color: #f5f7f1;
+    white-space: normal;
+}
 
-.btn {
+#navbar .btn {
     background-color: #f5f7f1;
     border: 0;
     color: #ec1c23;
     padding: 4px 7px 2px;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
-.navbar-toggler {
-    background: black;
+#navbar .navbar-toggler {
+    color: #f5f7f1;
+}
+
+#navbar .dropdown-menu {
+     /* For browsers that do not support gradients */
+    background: #f5f7f1;
+
+    background: -webkit-linear-gradient(#f5f7f1, #ccc);
+    background: -o-linear-gradient(#f5f7f1, #ccc);
+    background: -moz-linear-gradient(#f5f7f1, #ccc));
+    background: linear-gradient(#f5f7f1, #ccc);
+
+    width: 370px;
+    left: 50%;
+    right: auto;
+    text-align: center;
+    transform: translate(-50%, 0);
+    border: none;
+    padding: 15px;
+}
+
+#navbar a.dropdown-item {
+    text-align: left;
+    line-height: 1.25em;
+    color: #6d6e71;
+    font-size: 12px;
+    text-transform: capitalize;
+    padding-left: 0;
+}
+
+#navbar h5 {
+    padding-left: 0;
+}
+#navbar .dropdown-menu ul{
+    padding: 0;
+}
+#navbar .dropdown-menu li {
+    list-style: none;
+    
+}
+
+#navbar .arrow {
+    border: 10px solid transparent;
+    border-color: transparent transparent #f5f7f1 transparent;
+    width: 0;
+    height: 0;
+    
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    
+    transform: translateX(-10px);
 }
 
 /* FIRST CARD */
-
-.bluered-card {
-    background: #ec1c23;
+#homepage .bluered-card {
     /* For browsers that do not support gradients */
+    background: #ec1c23;
+    
     background: -webkit-linear-gradient(#ec1c23, #1d2671);
-    /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#ec1c23, #1d2671);
-    /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#ec1c23, #1d2671);
-    /* For Firefox 3.6 to 15 */
     background: linear-gradient(#ec1c23, #1d2671);
-    /* Standard syntax */
+    
     padding-bottom: 100px;
     color: #f5f7f1;
 }
-.bluered-card h3 {
+
+#homepage .bluered-card h3 {
     padding-top: 100px;
 }
-.bluered-card h4 {
+
+#homepage .bluered-card h4 {
     padding: 5px 0 300px;
 }
-.card-title {
+
+#homepage .card-title {
     text-align: center;
 }
-.img-triangle {
+
+#homepage .img-triangle {
     padding-top: 60px;
 }
 
 /* SECOND CARD */
-
-.redorange-card {
-    background: #f16529;
+#homepage .redorange-card {
     /* For browsers that do not support gradients */
+    background: #f16529;
+    
     background: -webkit-linear-gradient(#f16529, #ec1c23);
-    /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#f16529, #ec1c23);
-    /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#f16529, #ec1c23);
-    /* For Firefox 3.6 to 15 */
     background: linear-gradient(#f16529, #ec1c23);
-    /* Standard syntax */
+
     padding: 100px 0;
     color: #f5f7f1;
 }
 
-.redorange-card a {
+#homepage .redorange-card a {
     color: #f5f7f1;
     font-weight: 500; 
 }
 
-.redorange-card .text-row-orangecard {
+#homepage .redorange-card .text-row-orangecard {
     padding-top: 200px;
 }
 
 /* THIRD CARD */
-
-.white-card {
+#homepage .white-card {
     text-align: center;
     color: #ec1c23;
 }
 
-.white-card .text-row-whitecard {
+#homepage .white-card .text-row-whitecard {
     padding-top: 100px;
 }
 
 /* CALL TO ACTION CARD */
-
 /* Inherits backgrouds and link colors from SECOND CARD */
-
-.call-to-action {
+#homepage .call-to-action-card {
     text-transform: uppercase;
     font-size: 24px;
     text-align: center;
 }
 
 /* FOOTER */
-
-.footer {
-    background: #f5f7f1;
+#homepage .footer {
     /* For browsers that do not support gradients */
+    background: #f5f7f1;
+
     background: -webkit-linear-gradient(#f5f7f1, #ccc);
-    /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#f5f7f1, #ccc);
-    /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#f5f7f1, #ccc));
-    /* For Firefox 3.6 to 15 */
     background: linear-gradient(#f5f7f1, #ccc);
-    /* Standard syntax */
+
     list-style-type: none;
 }
 
@@ -173,21 +220,26 @@ p {
     color: #6d6e71;
     font-size: 12px;
 }
+
 .footer ul {
     list-style-type: none;
     padding: 0;
-    line-height: 1.25
+    line-height: 1.25em;
+    color: #ec1c23;
 }
+
+.footer .social-icons {
+    margin: 10px 0 0 0;
+}
+
 .footer .copyright a {
     font-size: 10px;
 }
+
 .footer .copyright p {
     font-size: 10px;
 }
-.footer img {
+
+.footer .logo {
     padding: 0 0 20px;
 }
-.footer .ul .i {
-    color: #ec1c23;  
-}
-

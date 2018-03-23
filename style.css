@@ -29,7 +29,7 @@ font-weight:
 }
 
 #homepage h4 {
-    font-size: 18px;    
+    font-size: 24px;
 }
 
 #homepage h5 {
@@ -37,10 +37,6 @@ font-weight:
     text-transform: uppercase;
     color: #ec1c23;
     font-weight: bold;
-}
-
-#homepage p {
-    font-size: 16px;
 }
 
 #homepage .card-section {
@@ -54,9 +50,11 @@ font-weight:
     padding: 0 100px 100px 120px;
     font-size: 12px;
 }
-.nav-item {
+
+#navbar .nav-item {
     margin-right: 35px;
 }
+
 #navbar a {
     color: #f5f7f1;
     white-space: normal;
@@ -105,9 +103,11 @@ font-weight:
 #navbar h5 {
     padding-left: 0;
 }
+
 #navbar .dropdown-menu ul{
     padding: 0;
 }
+
 #navbar .dropdown-menu li {
     list-style: none;
 }
@@ -217,7 +217,7 @@ font-weight:
 .footer p {
     margin-bottom: 0;
     color: #6d6e71;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .footer ul {
@@ -232,10 +232,6 @@ font-weight:
 }
 
 .footer .copyright a {
-    font-size: 10px;
-}
-
-.footer .copyright p {
     font-size: 10px;
 }
 

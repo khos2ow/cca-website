@@ -54,7 +54,9 @@ font-weight:
 #navbar .nav-item {
     margin-right: 35px;
 }
-
+hr {
+    display: none;
+}
 #navbar a {
     color: #f5f7f1;
     white-space: normal;
@@ -125,6 +127,16 @@ font-weight:
     transform: translateX(-10px);
 }
 
+/* MOBILE NAVBAR*/
+@media screen and (max-width : 768px) {
+    #navbar .logo-white{
+        height: 35px;
+    }
+    #navbar {
+    padding: 15px 10px
+    }
+}
+
 /* FIRST CARD */
 #homepage .bluered-card {
     /* For browsers that do not support gradients */
@@ -153,6 +165,23 @@ font-weight:
 
 #homepage .img-triangle {
     padding-top: 60px;
+}
+
+/*MOBILE FIRST CARD*/
+@media screen and (max-width : 768px) {
+                hr {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 0.5px;
+    width: 8%;
+    height: 1px;
+    border-color: #ccc;
+    background-color: #ccc;
+    opacity: 0.5;
+    border-radius: 0.5px;
+}
 }
 
 /* SECOND CARD */

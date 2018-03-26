@@ -20,8 +20,13 @@ font-weight:
 
 /* TODO: Define h1 default size  */
 
+ul li {
+    list-style: none;
+}
+
 #homepage h2 {
-    font-size: 82px;     
+    font-size: 82px; 
+    margin-left: 200px;
 }
 
 #homepage h3 {
@@ -110,10 +115,6 @@ hr {
     padding: 0;
 }
 
-#navbar .dropdown-menu li {
-    list-style: none;
-}
-
 #navbar .arrow {
     border: 10px solid transparent;
     border-color: transparent transparent #f5f7f1 transparent;
@@ -132,6 +133,7 @@ hr {
     #navbar .logo-white{
         height: 35px;
     }
+    
     #navbar {
     padding: 15px 10px
     }
@@ -181,7 +183,20 @@ hr {
     background-color: #ccc;
     opacity: 0.5;
     border-radius: 0.5px;
-}
+    }
+    
+    #homepage  h2 {
+        font-size: 60px; 
+        margin-left: 20px;
+    }
+    
+    #homepage .img-triangle {
+        margin-top: -100px;
+        margin-left: 100px;
+        padding-top: 0;
+        float: right;
+        position: relative;
+    }
 }
 
 /* SECOND CARD */
@@ -207,8 +222,47 @@ hr {
     padding-top: 200px;
 }
 
+#homepage .img-cube-mobile {
+        display: none;
+    }
+/*MOBILE SECOND CARD*/
+@media screen and (max-width : 768px) {
+    #homepage #title-row-orangecard {
+    color: #ec1c23;
+    background-color: #f5f7f1;
+    padding: 100px 0 10px 0;
+    }
+    #homepage .redorange-card.card-section {
+        padding-top: 0;
+    } 
+   
+    #homepage .img-cube-desktop {
+        display: none;
+    }
+    
+    #homepage .img-cube-mobile {
+        margin: 70px 0 30px -20px;
+        float: right;
+        position: relative;
+        display:block;
+    }
+    #homepage .redorange-card .text-row-orangecard {
+        padding-top: 70px;
+    }
+    #homepage .redorange-card h4 {
+        font-size: 30px;
+        color: #f5f7f1;
+        font-weight: 500; 
+        line-height: 1.5;
+    }
+    
+    #homepage .redorange-card a, li, p {
+        font-size: 24px;
+    }
+}
 /* THIRD CARD */
 #homepage .white-card {
+    background-color: #f5f7f1;
     text-align: center;
     color: #ec1c23;
 }
@@ -217,6 +271,26 @@ hr {
     padding-top: 100px;
 }
 
+
+/*MOBILE THIRD CARD*/
+@media screen and (max-width : 768px) {
+    #homepage .white-card .card-title {
+        text-align: left;
+    }
+    
+    #homepage .white-card h4 {
+        font-size: 30px;
+        margin-left: 20px; 
+    }
+    #homepage .tech-brief img {
+        display: inline-block;
+        height: 230px;
+    }
+    #homepage .white-card .workloads-row p {
+        text-align: left;
+        margin-left: 40px;
+    }
+}
 /* CALL TO ACTION CARD */
 /* Inherits backgrouds and link colors from SECOND CARD */
 #homepage .call-to-action-card {
@@ -234,8 +308,6 @@ hr {
     background: -o-linear-gradient(#f5f7f1, #ccc);
     background: -moz-linear-gradient(#f5f7f1, #ccc));
     background: linear-gradient(#f5f7f1, #ccc);
-
-    list-style-type: none;
 }
 
 .footer a {
@@ -250,7 +322,6 @@ hr {
 }
 
 .footer ul {
-    list-style-type: none;
     padding: 0;
     line-height: 1.25em;
     color: #ec1c23;

@@ -13,15 +13,20 @@ font-weight:
 */
 
 /* GENERAL */
-#homepage body {
-    font-family: proxima nova, sans-serif;
+body {
+    font-family: ,sans-serif;
     font-weight: 200;
+    overflow-x: hidden;
 }
 
 /* TODO: Define h1 default size  */
 
 ul li {
     list-style: none;
+}
+
+hr {
+    display: none;
 }
 
 #homepage h2 {
@@ -59,9 +64,7 @@ ul li {
 #navbar .nav-item {
     margin-right: 35px;
 }
-hr {
-    display: none;
-}
+
 #navbar a {
     color: #f5f7f1;
     white-space: normal;
@@ -78,6 +81,7 @@ hr {
 
 #navbar .navbar-toggler {
     color: #f5f7f1;
+    margin-right: 10px;
 }
 
 #navbar .dropdown-menu {
@@ -299,8 +303,24 @@ hr {
     text-align: center;
 }
 
+/*MOBILE CALL TO ACTION CARD*/
+@media screen and (max-width : 768px) {
+    #homepage #call-to-action {
+        padding: 40px 0;
+    }
+    
+    #homepage .call-to-action-card {
+        padding: 0;
+    }
+    
+    #homepage .call-to-action-card hr {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
 /* FOOTER */
-#homepage .footer {
+.footer {
     /* For browsers that do not support gradients */
     background: #f5f7f1;
 
@@ -337,4 +357,29 @@ hr {
 
 .footer .logo {
     padding: 0 0 20px;
+}
+
+.footer .mobile-footer-settings {
+     display: none; 
+}
+
+/*MOBILE FOOTER*/
+@media screen and (max-width : 768px) {
+     .footer hr {
+        border-color: #6d6e71;
+        background-color: #6d6e71;
+             margin-left: 0;
+    }
+    
+    .footer .mobile-footer-settings {
+         display: block; 
+    } 
+    
+    .footer .logo {
+        display: none;
+    }
+    
+    #homepage .footer.card-section {
+         padding: 40px 10px;
+    }
 }

@@ -209,10 +209,11 @@
 <!-- CALL TO ACTION CARD-->
         <div class="redorange-card call-to-action-card card-section">
             <div class="row">
-                <div class="col-md-2 offset-md-2 col-sm-12">
+                <div class="col-md-2 offset-md-2 col-sm-12" id="call-to-action">
                     <a href="#">Learn more</a>
                 </div>
-                <div class="col-md-2 offset-md-4 col-sm-12">
+                <hr>
+                <div class="col-md-2 offset-md-4 col-sm-12" id="call-to-action">
                     <a href="#">Start trial</a>
                 </div>
             </div>
@@ -220,7 +221,6 @@
 
 <!-- FOOTER -->
         <footer class="footer card-section">
-            <div class="container-fluid">
                 
                 <div class="row">
                     <div class="col-md-2 offset-md-1">
@@ -233,93 +233,106 @@
                         <div class="email">
                             <a href="#">info@cloud.ca</a>
                         </div>
-                        <ul class="social-icons">
-                            <li>
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-linkedin-in"></i>
-                             </li>
-                            <li>
-                                <i class="fab fa-google-plus-g"></i>
-                                <i class="fab fa-youtube"></i>
-                                <i class="fas fa-rss-square"></i>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 why-cloudca">
-                        <h5>Why cloud.ca</h5> 
-                        <ul>
-                           <li><a href="#">Hyperscale comparison</a></li> 
-                            <li><a href="#">Use cases</a></li> 
-                            <li><a href="#">Locations</a></li>  
-                        </ul>
-                    </div>
-                    <div class="col-md-2 general">
-                        <h5>General</h5> 
-                        <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Customers</a></li>
-                            <li><a href="#">Partners</a></li>
-                            <li><a href="#">White papers</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 sales">
-                        <h5>Sales</h5> 
-                        <ul>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Request demo or a quote</a></li> 
-                            <li><a href="#">Events</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 support">
-                        <h5>Support</h5> 
-                        <ul>
-                            <li><a href="#">Get support</a></li>
-                            <li><a href="#">SLA</a></li>
-                            <li><a href="#">Certifications</a></li>
-                            <li><a href="#">Status</a></li>
-                            <li><a href="#">Knowledge base</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-2 offset-md-3 developers">
-                        <h5>Developers</h5> 
-                        <ul>
-                            <li><a href="#">API docs</a></li>
-                            <li><a href="#">Tools</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 product">
-                        <h5>Product</h5> 
-                        <ul>
-                            <li><a href="#">Multi-tenant cloud</a></li>
-                            <li><a href="#">Storage</a></li>
-                            <li><a href="#">Dedicated infrastructure</a></li> 
-                            <li><a href="#">Bare metal</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 pricing">
-                        <h5>Pricing</h5> 
-                        <ul>
-                            <li><a href="#">Option 1</a></li>
-                            <li><a href="#">Option 2</a></li> 
-                            <li><a href="#">Option 3</a></li>
-                        </ul>
-                    </div>
-                </div>
+                            <ul class="social-icons">
+                                <li>
+                                    <i class="fab fa-facebook-f"></i>
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                 </li>
+                                <li>
+                                    <i class="fab fa-google-plus-g"></i>
+                                    <i class="fab fa-youtube"></i>
+                                    <i class="fas fa-rss-square"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <hr>
+                            <div class="col-md-2 col-sm-12 why-cloudca">
+                                <h5>Why cloud.ca</h5> 
+                                    <ul>
+                                       <li><a href="#">Hyperscale comparison</a></li> 
+                                        <li><a href="#">Use cases</a></li> 
+                                        <li><a href="#">Locations</a></li>  
+                                    </ul>
+                            </div>
+                            <div class="col-md-2 col-sm-12 general">
+                                <h5>General</h5> 
+                                    <ul>
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Customers</a></li>
+                                        <li><a href="#">Partners</a></li>
+                                        <li><a href="#">White papers</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                    </ul>
+                            </div>
+                            <div class="col-md-2 col-sm-12 sales">
+                                <h5>Sales</h5> 
+                                    <ul>
+                                        <li><a href="#">Contact us</a></li>
+                                        <li><a href="#">Request demo or a quote</a></li> 
+                                        <li><a href="#">Events</a></li>
+                                    </ul>
+                            </div>
+                            <div class="col-md-2 col-sm-12 support">
+                                <h5>Support</h5> 
+                                    <ul>
+                                        <li><a href="#">Get support</a></li>
+                                        <li><a href="#">SLA</a></li>
+                                        <li><a href="#">Certifications</a></li>
+                                        <li><a href="#">Status</a></li>
+                                        <li><a href="#">Knowledge base</a></li>
+                                    </ul>
+                            </div>
+                        </div>
                 
-                <div class="row">
-                    <div class="col-md-3 offset-md-1 copyright">
-                        <p>&copy;2018 All Rights Reserved. Cloud.ca</p> 
-                        <a href="#">Privacy and Terms</a>
+                        <div class="row">
+                            <div class="col-md-2 offset-md-3 col-sm-12 developers">
+                                <h5>Developers</h5> 
+                                    <ul>
+                                        <li><a href="#">API docs</a></li>
+                                        <li><a href="#">Tools</a></li>
+                                    </ul>
+                            </div>
+                            <div class="col-md-2 col-sm-12 product">
+                                <h5>Product</h5> 
+                                    <ul>
+                                        <li><a href="#">Multi-tenant cloud</a></li>
+                                        <li><a href="#">Storage</a></li>
+                                        <li><a href="#">Dedicated infrastructure</a></li> 
+                                        <li><a href="#">Bare metal</a></li>
+                                    </ul>
+                            </div>
+                            <div class="col-md-2 col-sm-12 pricing">
+                                <h5>Pricing</h5> 
+                                    <ul>
+                                        <li><a href="#">Option 1</a></li>
+                                        <li><a href="#">Option 2</a></li> 
+                                        <li><a href="#">Option 3</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                <div class="mobile-footer-settings">
+                <hr>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12">
+                            <ul>
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="#">User stats</a></li> 
+                                <li><a href="#">Messages</a></li>
+                                <li><a href="#">Sign out</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            
-            </div>
+                    <div class="row">
+                        <div class="col-md-3 offset-md-1  col-sm-12 copyright">
+                            <p>&copy;2018 All Rights Reserved. Cloud.ca</p> 
+                            <a href="#">Privacy and Terms</a>
+                        </div>
+                    </div>
         </footer>
 
         <!-- jQuery first,then popper JS, then Bootstrap JS -->

@@ -21,7 +21,7 @@ body {
 
 /* TODO: Define h1 default size  */
 
-ul li {
+li {
     list-style: none;
 }
 
@@ -143,6 +143,7 @@ hr {
     }
 }
 
+
 /* FIRST CARD */
 #homepage .bluered-card {
     /* For browsers that do not support gradients */
@@ -155,6 +156,10 @@ hr {
     
     padding-bottom: 100px;
     color: #f5f7f1;
+}
+
+#homepage .bluered-card .complex-clouds {
+    overflow: hidden;
 }
 
 #homepage .bluered-card h3 {
@@ -332,7 +337,8 @@ hr {
 
 .footer a {
     color: #6d6e71;
-    font-size: 12px; 
+    font-size: 12px;
+    line-height: 1.5em;
 }
 
 .footer p {
@@ -381,5 +387,39 @@ hr {
     
     #homepage .footer.card-section {
          padding: 40px 10px;
+    }
+    
+    .footer a {
+        font-size: 24px; 
+    }
+
+    .footer p {
+        margin-bottom: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer .social-icons {
+        margin: 10px 0 0 0;
+    }
+    
+    .footer .social-icons li {
+    font-size: 40px;
+    }
+    
+    .footer .copyright a {
+        font-size: 12px;
+    }
+    
+    .footer .copyright .privacy {
+        text-align: center;
+    }
+    .footer .dropdown-menu {
+        background-color: transparent;
+        border: none; 
+        position: relative;
+    }
+    .footer #desktop-menu {
+        display: none;
     }
 }

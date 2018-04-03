@@ -19,7 +19,15 @@
 <!-- NAVBAR -->
         <nav id="navbar" class="navbar fixed-top navbar-expand-lg">
             <a class="navbar-brand" href="#"><img class="logo-white" src="images/logowhite.png" alt="cloud.ca"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <button 
+               class="navbar-toggler"
+               type="button"
+               data-toggle="collapse"
+               data-target="#navbarNavDropdown"
+               aria-controls="navbarNavDropdown"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
                 <span class="navbar-toggler-icon">
                     <i class="fas fa-bars"></i>
                 </span>
@@ -88,12 +96,11 @@
 
 <!-- FIRST CARD -->
         <div class="bluered-card card-section">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 card-title">
                         <h3>Canadian Cloud Services</h3>
-                        <hr>
-                        <h4>For companies that care where their data lives</h4>
+                        <h4 class="with-line">For companies that care where their data lives</h4>
                     </div>
                 </div>
                 <div class="row complex-clouds">
@@ -110,14 +117,13 @@
 <!-- SECOND CARD -->
         <div class="redorange-card card-section">
             <div id="title-row-orangecard">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
                             <h2>but they don't have to be</h2> 
                         </div>
                     </div>
                 </div>
-                <div class="container">
                 <div class="row ">
                         <div class="col-md-2 offset-md-7 col-sm-6">
                             <img class="img-cube-desktop" src="images/cube.png">
@@ -125,10 +131,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
+
                 <div class="row text-row-orangecard">
-                    <div class="col-md-4 offset-1 col-sm-12">
+                    <div class="col-md-5 offset-1 col-sm-12">
                         <h4>Our Infrastructure as a Service (laaS) is purpose built for:</h4>
                         <ul>
                             <li>Data Sovereignty</li>
@@ -137,40 +142,38 @@
                             <li>Cloud automation</li>
                         </ul>
                     </div>
-                    <div class="col-md-4 offset-1 col-sm-12">
+                    
+                    <div class="col-md-5 offset-1 col-sm-12">
                         <h4>Cloud.ca is not a hyperscale cloud, here is how we are different:</h4>
                         <p>A Canadian-owned provider with a vested interest in your data security. Consume cloud your way: flexible offerings and pricing structures. Easy access to a team that supports your business success and unique needs.</p> 
                         <a href="#">Learn more</a>
                     </div>
                 </div>
             </div>
-        </div>
 
 <!-- THIRD CARD -->
         <div class="white-card card-section">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 card-title">
                         <h4>Technical Brief</h4>
                     </div>
                 </div>
-            </div>
-            <div class="container tech-brief">
-                <div class="row">
-                    <div class="col-md-2 offset-md-2 col-sm-12"> 
-                        <img src="images/elastic-compute.png">
-                        <p>Elastic compute</p>
+                <div class="tech-brief">
+                    <div class="row">
+                        <div class="col-md-2 offset-md-2 col-sm-12"> 
+                            <img src="images/elastic-compute.png">
+                            <p>Elastic compute</p>
+                        </div>
+                        <div class="col-md-2 offset-md-1 col-sm-12"> 
+                            <img class="img-fluid" src="images/performant-multi-tenant-storage.png">
+                            <p>Performant multi-tenant storage</p>
+                        </div>
+                        <div class="col-md-2 offset-md-1 col-sm-12"> 
+                            <img class="img-fluid" src="images/multi-tiered-networking.png">
+                            <p>Multi-tiered networking</p>
+                        </div>
                     </div>
-                    <div class="col-md-2 offset-md-1 col-sm-12"> 
-                        <img class="img-fluid" src="images/performant-multi-tenant-storage.png">
-                        <p>Performant multi-tenant storage</p>
-                    </div>
-                    <div class="col-md-2 offset-md-1 col-sm-12"> 
-                        <img class="img-fluid" src="images/multi-tiered-networking.png">
-                        <p>Multi-tiered networking</p>
-                    </div>
-                </div>
-                <div class="container">
                     <div class="row">
                         <div class="col-md-2 offset-md-2 col-sm-12"> 
                             <img class="img-fluid" src="images/integrated-devops-tooling.png">
@@ -186,222 +189,100 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
+                
                 <div class="row text-row-whitecard">
                     <div class="col-md-12 card-title">
                         <h4>Workloads running on cloud.ca</h4>
                     </div>
                 </div>
-            </div>
-                <div class="container">
-                    <div class="row workloads-row">
-                        <div class="col-md-2 offset-md-2 col-sm-12">
-                            <p>Dev/Test environments</p>
-                        </div>
-                        <div class="col-md-2 offset-md-1 col-sm-12">
-                            <p>Virtual desktops</p>
-                        </div>
-                        <div class="col-md-2 offset-md-1 col-sm-12">
-                            <p>Legacy applications</p>
-                        </div>
+                <div class="row workloads-row">
+                     <div class="col-md-2 offset-md-2 col-sm-12">
+                        <p>Dev/Test environments</p>
+                    </div>
+                    <div class="col-md-2 offset-md-1 col-sm-12">
+                        <p>Virtual desktops</p>
+                    </div>
+                    <div class="col-md-2 offset-md-1 col-sm-12">
+                        <p>Legacy applications</p>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row workloads-row">
-                        <div class="col-md-2 offset-md-2 col-sm-12">
-                            <p>SaaS platforms</p>
-                        </div>
-                        <div class="col-md-2 offset-md-1 col-sm-12">
-                            <p>Web applications</p>
-                        </div>
-                        <div class="col-md-2 offset-md-1 col-sm-12">
-                            <p>Infrastructure reseller</p>
-                        </div>
+                <div class="row workloads-row">
+                    <div class="col-md-2 offset-md-2 col-sm-12">
+                        <p>SaaS platforms</p>
+                    </div>
+                    <div class="col-md-2 offset-md-1 col-sm-12">
+                        <p>Web applications</p>
+                    </div>
+                    <div class="col-md-2 offset-md-1 col-sm-12">
+                        <p>Infrastructure reseller</p>
                     </div>
                 </div>
             </div>
+        </div>
 
 <!-- CALL TO ACTION CARD-->
         <div class="redorange-card call-to-action-card card-section">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-2 offset-md-2 col-sm-12" id="call-to-action">
                         <a href="#">Learn more</a>
                     </div>
-                    <hr>
                     <div class="col-md-2 offset-md-4 col-sm-12" id="call-to-action">
                         <a href="#">Start trial</a>
                     </div>
                 </div>
             </div>
         </div>
-
-<!--
- FOOTER 
-        <footer class="footer card-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-2 offset-md-1">
-                            <div class="logo">
-                                <img class="img-fluid orange-logo" src="images/logored.png">
-                            </div>
-                            <div class="phone-number">
-                                <a href="tel:+18887968364">1-888-796-8364</a>
-                            </div>
-                            <div class="email">
-                                <a href="#">info@cloud.ca</a>
-                            </div>
-                                <ul class="social-icons">
-                                    <li>
-                                        <i class="fab fa-facebook-f"></i>
-                                        <i class="fab fa-twitter"></i>
-                                        <i class="fab fa-linkedin-in"></i>
-                                     </li>
-                                    <li>
-                                        <i class="fab fa-google-plus-g"></i>
-                                        <i class="fab fa-youtube"></i>
-                                        <i class="fas fa-rss-square"></i>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        
-                        
-                        <div class="row container">
-                            <div class="col-sm-12">
-                        
-                                
-                                <li class="nav-item dropdown" >
-                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <ul>
-                                    <li>Expand footer</li>
-                                    <li>Collapse footer</li>
-                                </ul></a>
-                            <div class="dropdown-menu container" id="footer-dropdown" aria-labelledby="navbarDropdownMenuLink">
-                                <div class="arrow"></div>
-                                    <div class="col-md-2 col-sm-12 why-cloudca">
-                                        <h5>Why cloud.ca</h5> 
-                                            <ul>
-                                               <li><a href="#">Hyperscale comparison</a></li> 
-                                                <li><a href="#">Use cases</a></li> 
-                                                <li><a href="#">Locations</a></li>  
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-2 col-sm-12 general">
-                                            <h5>General</h5> 
-                                                <ul>
-                                                    <li><a href="#">About us</a></li>
-                                                    <li><a href="#">Blog</a></li>
-                                                    <li><a href="#">Customers</a></li>
-                                                    <li><a href="#">Partners</a></li>
-                                                    <li><a href="#">White papers</a></li>
-                                                    <li><a href="#">Careers</a></li>
-                                                </ul>
-                                        </div>
-                                        <div class="col-md-2 col-sm-12 sales">
-                                            <h5>Sales</h5> 
-                                                <ul>
-                                                    <li><a href="#">Contact us</a></li>
-                                                    <li><a href="#">Request demo or a quote</a></li> 
-                                                    <li><a href="#">Events</a></li>
-                                                </ul>
-                                        </div>
-                                        <div class="col-md-2 col-sm-12 support">
-                                            <h5>Support</h5> 
-                                                <ul>
-                                                    <li><a href="#">Get support</a></li>
-                                                    <li><a href="#">SLA</a></li>
-                                                    <li><a href="#">Certifications</a></li>
-                                                    <li><a href="#">Status</a></li>
-                                                    <li><a href="#">Knowledge base</a></li>
-                                                </ul>
-                                            </div>
-                                    <div class="col-md-2 offset-md-3 col-sm-12 developers">
-                                        <h5>Developers</h5> 
-                                            <ul>
-                                                <li><a href="#">API docs</a></li>
-                                                <li><a href="#">Tools</a></li>
-                                            </ul>
-                                    </div>
-                                    <div class="col-md-2 col-sm-12 product">
-                                        <h5>Product</h5> 
-                                            <ul>
-                                                <li><a href="#">Multi-tenant cloud</a></li>
-                                                <li><a href="#">Storage</a></li>
-                                                <li><a href="#">Dedicated infrastructure</a></li> 
-                                                <li><a href="#">Bare metal</a></li>
-                                            </ul>
-                                    </div>
-                                    <div class="col-md-2 col-sm-12 pricing">
-                                        <h5>Pricing</h5> 
-                                            <ul>
-                                                <li><a href="#">Option 1</a></li>
-                                                <li><a href="#">Option 2</a></li> 
-                                                <li><a href="#">Option 3</a></li>
-                                            </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </li>
-                               
-                <div class="mobile-footer-settings">
-                    <div class="row container">
-                        <div class="col-md-2 col-sm-12">
-                            <ul>
-                                <li><a href="#">Settings</a></li>
-                                <li><a href="#">User stats</a></li> 
-                                <li><a href="#">Messages</a></li>
-                                <li><a href="#">Sign out</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                    <div class="row container">
-                        <div class="col-md-3 offset-md-1 col-sm-12 copyright">
-                            <p>&copy;2018 All Rights Reserved. Cloud.ca</p> 
-                            <p class="privacy">
-                                <a href="#">Privacy and Terms</a>
-                            </p>
-                        </div>
-                    </div>
-        </footer>
--->
-
+        
+<!--FOOTER-->
         <footer class="footer card-section">
             <div class="container-fluid">
 
                 <div class="row"> <!-- primary row -->
                     
-                    <div class="col-md-2 offset-md-1"> <!-- logo etc -->
-                        <div class="logo">
-                            <img class="img-fluid orange-logo" src="images/logored.png">
+                    <div class="col-md-2 offset-md-1 col-sm-12"> <!-- logo etc -->
+                       <div class="row">
+                            <div class="col-12">
+                                <div class="logo">
+                                    <img class="img-fluid orange-logo" src="images/logored.png">
+                                </div>
+
+                                <div class="phone-number">
+                                    <a href="tel:+18887968364">1-888-796-8364</a>
+                                </div>
+
+                                <div class="email">
+                                    <a href="#">info@cloud.ca</a>
+                                </div>
+                           </div>
                         </div>
-                        
-                        <div class="phone-number">
-                            <a href="tel:+18887968364">1-888-796-8364</a>
+                        <div class="social-icons">
+                            <div class="row">
+                                <div class="col-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </div>
+                                <div class="col-1">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <div class="col-1">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </div>
+                                <div class="col-1">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                                <div class="col-1">
+                                    <i class="fas fa-rss-square"></i>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div class="email">
-                            <a href="#">info@cloud.ca</a>
-                        </div>
-                        
-                        <ul class="social-icons">
-                            <li>
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-linkedin-in"></i>
-                            </li>
-                            <li>
-                                <i class="fab fa-google-plus-g"></i>
-                                <i class="fab fa-youtube"></i>
-                                <i class="fas fa-rss-square"></i>
-                            </li>
-                        </ul>
                     </div> <!-- logo etc -->
 
-                    <div class="col-sm-12 d-sm-none"> <!-- menu items column -->
+                    <div class="toggle-footer col-sm-12 d-sm-none"> <!-- menu items column -->
                         <button 
                             type="button" 
                             class="btn d-md-none" 
@@ -410,7 +291,8 @@
                             aria-controls="menu-items"
                             aria-expanded="false"
                         >
-                            Toggle Footer
+                        <div class="open-toggle">Collapse footer</div>
+                        <div class="close-toggle">Expand footer</div>
                         </button>
 
                         <div class="collapse row" id="menu-items"> <!-- menu items row -->
@@ -485,9 +367,10 @@
                             
                         </div><!-- menu items row -->
                     </div> <!-- menu items column -->
-                       
+                    
+                    <div class="col-md-9"> <!-- menu items column -->
                         <div class="row" id="desktop-menu"> 
-        
+
                             <div class="col-md-3 col-sm-12 why-cloudca">
                                 <h5>Why cloud.ca</h5>
                                 <ul>
@@ -496,7 +379,7 @@
                                     <li><a href="#">Locations</a></li>
                                 </ul>
                             </div>
-                            
+
                             <div class="col-md-3 col-sm-12 general">
                                 <h5>General</h5>
                                 <ul>
@@ -508,7 +391,7 @@
                                     <li><a href="#">Careers</a></li>
                                 </ul>
                             </div>
-                            
+
                             <div class="col-md-3 col-sm-12 sales">
                                 <h5>Sales</h5>
                                 <ul>
@@ -517,7 +400,7 @@
                                     <li><a href="#">Events</a></li>
                                 </ul>
                             </div>
-                            
+
                             <div class="col-md-3 col-sm-12 support">
                                 <h5>Support</h5>
                                 <ul>
@@ -528,7 +411,7 @@
                                     <li><a href="#">Knowledge base</a></li>
                                 </ul>
                             </div>
-                            
+
                             <div class="col-md-3 col-sm-12 developers">
                                 <h5>Developers</h5>
                                 <ul>
@@ -546,7 +429,7 @@
                                     <li><a href="#">Bare metal</a></li>
                                 </ul>
                             </div>
-        
+
                             <div class="col-md-3 col-sm-12 pricing">
                                 <h5>Pricing</h5>
                                 <ul>
@@ -555,24 +438,15 @@
                                     <li><a href="#">Option 3</a></li>
                                 </ul>
                             </div>
-                            
-                        </div><!-- menu items row -->
+
+                        </div> <!-- menu items row -->
                     </div> <!-- menu items column -->
                 </div> <!-- primary row -->
+
                 
-                <div class="row mobile-footer-settings">
-                    <div class="col-md-2 col-sm-12">
-                        <ul>
-                            <li><a href="#">Settings</a></li>
-                            <li><a href="#">User stats</a></li>
-                            <li><a href="#">Messages</a></li>
-                            <li><a href="#">Sign out</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-md-3 offset-md-1 col-sm-12 copyright">
+                <div class="row copy-privacy">
+                    <div class="col-md-3 offset-md-1 col-sm-12">
+                       <img id="mobile-footer-logo" src="images/logored.png">
                         <p>&copy;2018 All Rights Reserved. Cloud.ca</p>
                         <p class="privacy"> <a href="#">Privacy and Terms</a> </p>
                     </div>

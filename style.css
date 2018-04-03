@@ -36,10 +36,12 @@ hr {
 
 #homepage h3 {
     font-size: 42px;
+    margin-bottom: 20px;
 }
 
 #homepage h4 {
     font-size: 24px;
+    margin-top: 20px;
 }
 
 #homepage h5 {
@@ -172,6 +174,7 @@ hr {
 
 #homepage .card-title {
     text-align: center;
+    position: relative;
 }
 
 #homepage .img-triangle {
@@ -180,18 +183,27 @@ hr {
 
 /*MOBILE FIRST CARD*/
 @media screen and (max-width : 768px) {
-                hr {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-style: solid;
-    border-width: 0.5px;
-    width: 8%;
-    height: 1px;
-    border-color: #ccc;
-    background-color: #ccc;
-    opacity: 0.5;
-    border-radius: 0.5px;
+
+    .with-line {
+        position: relative;
+    }
+    
+    .with-line:before {
+        content: '';
+        
+        width: 50px;
+        height: 1px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #ccc;
+        background-color: #ccc;
+        opacity: 0.5;
+        border-radius: 1px;
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        
+        transform: translateX(-25px);
     }
     
     #homepage  h2 {
@@ -318,9 +330,43 @@ hr {
         padding: 0;
     }
     
-    #homepage .call-to-action-card hr {
-        margin-top: 0;
-        margin-bottom: 0;
+    #homepage .call-to-action-card .row .col-sm-12 {
+        position: relative;
+    }
+    
+    #homepage .call-to-action-card .row .col-sm-12::after {
+        content: '';
+        
+        background: white;
+        width: 50px;
+        height: 2px;
+        opacity: 0.5;
+        
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-25px);
+        
+        border-radius: 25px;
+    }
+
+    #homepage .call-to-action-card .row .col-sm-12:first-child::after {
+        display: none;
+    }
+    
+    #homepage .call-to-action-card .row .col-sm-12 {
+        position: relative;
+        height: 100px;
+    }
+    
+    #homepage .call-to-action-card .row .col-sm-12 a {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
     }
 }
 
@@ -353,11 +399,11 @@ hr {
     color: #ec1c23;
 }
 
-.footer .social-icons {
-    margin: 10px 0 0 0;
+.footer .copy-privacy a {
+    font-size: 10px;
 }
 
-.footer .copyright a {
+.footer .copy-privacy p {
     font-size: 10px;
 }
 
@@ -365,20 +411,22 @@ hr {
     padding: 0 0 20px;
 }
 
-.footer .mobile-footer-settings {
-     display: none; 
+.footer .social-icons{
+    font-size: 20px;
+    color: #ec1c23;
+    margin-bottom: 10px;
+    }
+
+.footer .copy-privacy #mobile-footer-logo {
+    display: none;
 }
 
 /*MOBILE FOOTER*/
 @media screen and (max-width : 768px) {
-     .footer hr {
-        border-color: #6d6e71;
-        background-color: #6d6e71;
-             margin-left: 0;
-    }
-    
+
     .footer .mobile-footer-settings {
          display: block; 
+        margin-top: 10px;
     } 
     
     .footer .logo {
@@ -389,31 +437,56 @@ hr {
          padding: 40px 10px;
     }
     
+    .footer .toggle-footer::before,
+    .footer .toggle-footer::after {
+        content: '';
+        
+        background: #6d6e71;
+        width: 50px;
+        height: 2px;
+        opacity: 0.5;
+        
+        position: absolute;
+        left: 11%;
+        transform: translateX(-25px);
+        
+        border-radius: 25px;
+    }
+    .footer .toggle-footer::after {
+        bottom: 0;
+    }
+    .footer .toggle-footer::before {
+        top: 0;
+    }
+    .footer .toggle-footer .btn {
+        background-color: transparent;
+        min-height: 40px;
+        
+    }
+    .footer .toggle-footer [aria-expanded="false"] {
+        color: #6d6e71;    
+    }
+
+    .footer .toggle-footer [aria-expanded="true"] {
+        color: #6d6e71;
+    }
+    
     .footer a {
         font-size: 24px; 
     }
-
-    .footer p {
+    .footer .copy-privacy a{
+        font-size: 12px;
+    }
+    
+    .footer .copy-privacy p{
+        font-size: 12px;
+    }
+    
+    .footer .copy-privacy{
+        text-align: center;
         margin-bottom: 0;
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .footer .social-icons {
-        margin: 10px 0 0 0;
     }
     
-    .footer .social-icons li {
-    font-size: 40px;
-    }
-    
-    .footer .copyright a {
-        font-size: 12px;
-    }
-    
-    .footer .copyright .privacy {
-        text-align: center;
-    }
     .footer .dropdown-menu {
         background-color: transparent;
         border: none; 
@@ -422,4 +495,9 @@ hr {
     .footer #desktop-menu {
         display: none;
     }
+    
+    .footer .copy-privacy #mobile-footer-logo {
+        display: inline;
+        margin: 150px 0 20px;
+}
 }

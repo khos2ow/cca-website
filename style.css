@@ -136,67 +136,89 @@ hr {
 
 /* MOBILE NAVBAR*/
 @media screen and (max-width : 768px) {
-    #navbar .logo-white{
+    #navbar .logo-white {
         height: 35px;
     }
     
     #navbar {
-    padding: 15px 10px
+    padding: 15px 10px;
     }
 }
-
-
-
-.navbar-side {
-    height: 100%;
-    width: 80%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 20px;
-    list-style: none;
-    background-color:  
-        /* For browsers that do not support gradients */
+    #navbar .navbar-side {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        list-style: none;
+        
         background: #f5f7f1;
-
+        
         background: -webkit-linear-gradient(#f5f7f1, #ccc);
         background: -o-linear-gradient(#f5f7f1, #ccc);
-        background: -moz-linear-gradient(#f5f7f1, #ccc));
+        background: -moz-linear-gradient(#f5f7f1, #ccc);
         background: linear-gradient(#f5f7f1, #ccc);
-    overflow-y: scroll;
-    z-index: 1000;
-    -webkit-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    transform: translateX(100%);
-    -webkit-transition: 300ms ease;
-    transition: 300ms ease;
+        
+        overflow-y: scroll;
+        z-index: 1000;
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-transition: 300ms ease;
+        transition: 300ms ease;
+        @include media-breakpoint-up(xs) { width: 100% };
+        @include media-breakpoint-up(sm) { width: 50% };
+        @include media-breakpoint-up(md) { width: 25% };
 }
-#navbar-side-items a{
-    color: #6d6e71;
-    font-size: 18px;
-    text-transform: capitalize;
-    margin-left: 0;
-}
-#navbar-side-items ul {
-    padding: 0 20px 20px;
-}
- .reveal {
-  -webkit-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  transform: translateX(0%);
-  -webkit-transition: 300ms ease;
-  transition: 300ms ease;
-}
+    
+    #navbar .close-side-button {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
 
-.overlay {
-  position: fixed;
-  display: none;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 990;
-}
+    }
+
+    #navbar #navbar-side-items a{
+        color: #6d6e71;
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-left: 0;
+    }
+    
+    #navbar #navbar-side-items ul {
+        padding: 0 20px 20px;
+    }
+    
+     #navbar .reveal {
+      -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      transform: translateX(0%);
+      -webkit-transition: -webkit-transform 0.5s;
+        transition-property: -webkit-transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+      transition: transform 0.5s;
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+    }
+
+    #navbar .overlay {
+      position: fixed;
+      display: none;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 990;
+    }
 
 /* FIRST CARD */
 #homepage .bluered-card {
@@ -298,6 +320,7 @@ hr {
 #homepage .img-cube-mobile {
         display: none;
     }
+
 /*MOBILE SECOND CARD*/
 @media screen and (max-width : 768px) {
     #homepage #title-row-orangecard {
@@ -333,6 +356,7 @@ hr {
         font-size: 24px;
     }
 }
+
 /* THIRD CARD */
 #homepage .white-card {
     background-color: #f5f7f1;

@@ -11,5 +11,10 @@ $( document ).ready(function() {
         $('#navbarSide').removeClass('reveal');
         $('.overlay').hide();
     });
-
+ //Close navbarSide when "close" button is pressed
+    $('.close-side-button').on('click', function(){
+        $('#navbarSide').removeClass('reveal');
+        $('.overlay').hide();
+    });
+    
 }); 

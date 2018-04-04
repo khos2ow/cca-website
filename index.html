@@ -17,24 +17,13 @@
     <body id="homepage">
 
 <!-- NAVBAR -->
-        <nav id="navbar" class="navbar fixed-top navbar-expand-lg">
+  
+        <nav id="navbar" class="navbar fixed-top navbar-expand-lg" role="navigation">
             <a class="navbar-brand" href="#"><img class="logo-white" src="images/logowhite.png" alt="cloud.ca"></a>
             
-            <button 
-               class="navbar-toggler"
-               type="button"
-               data-toggle="collapse"
-               data-target="#navbarNavDropdown"
-               aria-controls="navbarNavDropdown"
-               aria-expanded="false"
-               aria-label="Toggle navigation"
-                <span class="navbar-toggler-icon">
-                    <i class="fas fa-bars"></i>
-                </span>
-            </button>
-
+        
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
+                <ul class=" nav navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Why cloud.ca <span class="sr-only">(current)</span></a>
                     </li>
@@ -45,11 +34,21 @@
                         <a class="nav-link" href="#">Pricing</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+                        <a
+                            class="nav-link" 
+                            href="#" 
+                            id="navbarDropdownMenuLink" 
+                            data-toggle="dropdown" 
+                            aria-haspopup="true" 
+                            aria-expanded="false">
+                                Resources
+                        </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            
                             <div class="arrow"></div>
-                            <div class="row ">
-                                <div class="col-sm-3">
+                               
+                                <div class="row ">
+                                    <div class="col-sm-3">
                                         <h5 class="dropdown-header">Support</h5> 
                                         <ul>
                                             <li><a class="dropdown-item" href="#">Get support</a></li>
@@ -58,41 +57,125 @@
                                             <li><a class="dropdown-item" href="#">Status</a></li>
                                             <li><a class="dropdown-item" href="#">Knowledge base</a></li>
                                         </ul>
+                                    </div>
+                                    <div class="col-sm-3">
+                                            <h5 class="dropdown-header">Developers</h5> 
+                                            <ul>
+                                                <li><a class="dropdown-item" href="#">API docs</a></li>
+                                                <li><a class="dropdown-item" href="#">Tools</a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="col-sm-3">
+                                            <h5  class="dropdown-header">General</h5> 
+                                            <ul>
+                                                <li><a class="dropdown-item" href="#">About us</a></li>
+                                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                                <li><a class="dropdown-item" href="#">Customers</a></li>
+                                                <li><a class="dropdown-item" href="#">Partners</a></li>
+                                                <li><a class="dropdown-item" href="#">White papers</a></li>
+                                                <li><a class="dropdown-item" href="#">Careers</a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                            <h5 class="dropdown-header">Sales</h5> 
+                                            <ul>
+                                                <li><a class="dropdown-item" href="#">Contact us</a></li>
+                                                <li><a class="dropdown-item" href="#">Request demo or a quote</a></li> 
+                                                <li><a class="dropdown-item" href="#">Events</a></li>
+                                            </ul>
+                                    </div>
                                 </div>
-                                <div class="col-sm-3">
-                                        <h5 class="dropdown-header">Developers</h5> 
-                                        <ul>
-                                            <li><a class="dropdown-item" href="#">API docs</a></li>
-                                            <li><a class="dropdown-item" href="#">Tools</a></li>
-                                        </ul>
-                                </div>
-                                <div class="col-sm-3">
-                                        <h5  class="dropdown-header">General</h5> 
-                                        <ul>
-                                            <li><a class="dropdown-item" href="#">About us</a></li>
-                                            <li><a class="dropdown-item" href="#">Blog</a></li>
-                                            <li><a class="dropdown-item" href="#">Customers</a></li>
-                                            <li><a class="dropdown-item" href="#">Partners</a></li>
-                                            <li><a class="dropdown-item" href="#">White papers</a></li>
-                                            <li><a class="dropdown-item" href="#">Careers</a></li>
-                                        </ul>
-                                </div>
-                                <div class="col-md-3">
-                                        <h5 class="dropdown-header">Sales</h5> 
-                                        <ul>
-                                            <li><a class="dropdown-item" href="#">Contact us</a></li>
-                                            <li><a class="dropdown-item" href="#">Request demo or a quote</a></li> 
-                                            <li><a class="dropdown-item" href="#">Events</a></li>
-                                        </ul>
-                                </div>
-                            </div>
+                        </div>
                     </li>
                     <li class="nav-button">
                         <button class="btn btn-outline" type="button">Login | Signup</button>
                     </li>
                 </ul>
             </div>
-        </nav>
+
+          
+            <button 
+                class="navbar-toggler pull-xs-right"
+                id="navbarSideButton"
+                type="button"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+            
+            <ul class="navbar-side" id="navbarSide">
+                <li class="navbar-side-item-list">
+                    <div class="row" id="navbar-side-items"> <!-- menu items row -->
+                        <div class="col-sm-12 why-cloudca">
+                            <h5>Why cloud.ca</h5>
+                            <ul>
+                                <li><a href="#">Hyperscale comparison</a></li>
+                                <li><a href="#">Use cases</a></li>
+                                <li><a href="#">Locations</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 general">
+                            <h5>General</h5>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Customers</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#">White papers</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div> 
+                        <div class="col-sm-12 sales">
+                            <h5>Sales</h5>
+                            <ul>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Request demo or a quote</a></li>
+                                <li><a href="#">Events</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 support">
+                            <h5>Support</h5>
+                            <ul>
+                                <li><a href="#">Get support</a></li>
+                                <li><a href="#">SLA</a></li>
+                                <li><a href="#">Certifications</a></li>
+                                <li><a href="#">Status</a></li>
+                                <li><a href="#">Knowledge base</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 developers">
+                            <h5>Developers</h5>
+                            <ul>
+                                <li><a href="#">API docs</a></li>
+                                <li><a href="#">Tools</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 product">
+                            <h5>Product</h5>
+                            <ul>
+                                <li><a href="#">Multi-tenant cloud</a></li>
+                                <li><a href="#">Storage</a></li>
+                                <li><a href="#">Dedicated infrastructure</a></li>
+                                <li><a href="#">Bare metal</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 pricing">
+                            <h5>Pricing</h5>
+                            <ul>
+                                <li><a href="#">Option 1</a></li>
+                                <li><a href="#">Option 2</a></li>
+                                <li><a href="#">Option 3</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- side items row -->
+                </li>
+            </ul>
+            
+        <div class="overlay"></div>
+        
+</nav>
 
 <!-- FIRST CARD -->
         <div class="bluered-card card-section">
@@ -191,7 +274,7 @@
                 </div>
                 
                 <div class="row text-row-whitecard">
-                    <div class="col-md-12 card-title">
+                    <div class="col-sm-12 card-title">
                         <h4>Workloads running on cloud.ca</h4>
                     </div>
                 </div>
@@ -242,7 +325,7 @@
                     
                     <div class="col-md-2 offset-md-1 col-sm-12"> <!-- logo etc -->
                        <div class="row">
-                            <div class="col-12">
+                            <div class="col-xs-12">
                                 <div class="logo">
                                     <img class="img-fluid orange-logo" src="images/logored.png">
                                 </div>
@@ -297,7 +380,7 @@
 
                         <div class="collapse row" id="menu-items"> <!-- menu items row -->
         
-                            <div class="col-md-3 col-sm-12 why-cloudca">
+                            <div class="col-sm-12 why-cloudca">
                                 <h5>Why cloud.ca</h5>
                                 <ul>
                                     <li><a href="#">Hyperscale comparison</a></li>
@@ -306,7 +389,7 @@
                                 </ul>
                             </div>
                             
-                            <div class="col-md-3 col-sm-12 general">
+                            <div class="col-sm-12 general">
                                 <h5>General</h5>
                                 <ul>
                                     <li><a href="#">About us</a></li>
@@ -318,7 +401,7 @@
                                 </ul>
                             </div>
                             
-                            <div class="col-md-3 col-sm-12 sales">
+                            <div class="col-sm-12 sales">
                                 <h5>Sales</h5>
                                 <ul>
                                     <li><a href="#">Contact us</a></li>
@@ -327,7 +410,7 @@
                                 </ul>
                             </div>
                             
-                            <div class="col-md-3 col-sm-12 support">
+                            <div class="col-sm-12 support">
                                 <h5>Support</h5>
                                 <ul>
                                     <li><a href="#">Get support</a></li>
@@ -338,7 +421,7 @@
                                 </ul>
                             </div>
                             
-                            <div class="col-md-3 col-sm-12 developers">
+                            <div class="col-sm-12 developers">
                                 <h5>Developers</h5>
                                 <ul>
                                     <li><a href="#">API docs</a></li>
@@ -346,7 +429,7 @@
                                 </ul>
                             </div>
 
-                            <div class="col-md-3 col-sm-12 product">
+                            <div class="col-sm-12 product">
                                 <h5>Product</h5>
                                 <ul>
                                     <li><a href="#">Multi-tenant cloud</a></li>
@@ -356,7 +439,7 @@
                                 </ul>
                             </div>
         
-                            <div class="col-md-3 col-sm-12 pricing">
+                            <div class="col-sm-12 pricing">
                                 <h5>Pricing</h5>
                                 <ul>
                                     <li><a href="#">Option 1</a></li>
@@ -371,7 +454,7 @@
                     <div class="col-md-9"> <!-- menu items column -->
                         <div class="row" id="desktop-menu"> 
 
-                            <div class="col-md-3 col-sm-12 why-cloudca">
+                            <div class="col-md-3 why-cloudca">
                                 <h5>Why cloud.ca</h5>
                                 <ul>
                                     <li><a href="#">Hyperscale comparison</a></li>
@@ -380,7 +463,7 @@
                                 </ul>
                             </div>
 
-                            <div class="col-md-3 col-sm-12 general">
+                            <div class="col-md-3 general">
                                 <h5>General</h5>
                                 <ul>
                                     <li><a href="#">About us</a></li>
@@ -392,7 +475,7 @@
                                 </ul>
                             </div>
 
-                            <div class="col-md-3 col-sm-12 sales">
+                            <div class="col-md-3 sales">
                                 <h5>Sales</h5>
                                 <ul>
                                     <li><a href="#">Contact us</a></li>
@@ -401,7 +484,7 @@
                                 </ul>
                             </div>
 
-                            <div class="col-md-3 col-sm-12 support">
+                            <div class="col-md-3 support">
                                 <h5>Support</h5>
                                 <ul>
                                     <li><a href="#">Get support</a></li>
@@ -412,7 +495,7 @@
                                 </ul>
                             </div>
 
-                            <div class="col-md-3 col-sm-12 developers">
+                            <div class="col-md-3 developers">
                                 <h5>Developers</h5>
                                 <ul>
                                     <li><a href="#">API docs</a></li>
@@ -420,7 +503,7 @@
                                 </ul>
                             </div>
 
-                            <div class="col-md-3 col-sm-12 product">
+                            <div class="col-md-3 product">
                                 <h5>Product</h5>
                                 <ul>
                                     <li><a href="#">Multi-tenant cloud</a></li>
@@ -430,7 +513,7 @@
                                 </ul>
                             </div>
 
-                            <div class="col-md-3 col-sm-12 pricing">
+                            <div class="col-md-3 pricing">
                                 <h5>Pricing</h5>
                                 <ul>
                                     <li><a href="#">Option 1</a></li>
@@ -458,7 +541,8 @@
         <!-- jQuery first,then popper JS, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        
         <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+        
+        <script src="script.js"></script>
     </body>
 </html>

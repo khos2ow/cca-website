@@ -146,6 +146,58 @@ hr {
 }
 
 
+
+.navbar-side {
+    height: 100%;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    list-style: none;
+    background-color:  
+        /* For browsers that do not support gradients */
+        background: #f5f7f1;
+
+        background: -webkit-linear-gradient(#f5f7f1, #ccc);
+        background: -o-linear-gradient(#f5f7f1, #ccc);
+        background: -moz-linear-gradient(#f5f7f1, #ccc));
+        background: linear-gradient(#f5f7f1, #ccc);
+    overflow-y: scroll;
+    z-index: 1000;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+#navbar-side-items a{
+    color: #6d6e71;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-left: 0;
+}
+#navbar-side-items ul {
+    padding: 0 20px 20px;
+}
+ .reveal {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 990;
+}
+
 /* FIRST CARD */
 #homepage .bluered-card {
     /* For browsers that do not support gradients */
@@ -472,7 +524,8 @@ hr {
     }
     
     .footer a {
-        font-size: 24px; 
+        font-size: 18px; 
+        text-transform: capitalize;
     }
     .footer .copy-privacy a{
         font-size: 12px;
@@ -499,5 +552,5 @@ hr {
     .footer .copy-privacy #mobile-footer-logo {
         display: inline;
         margin: 150px 0 20px;
-}
+    }
 }

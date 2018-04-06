@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: local('ProximaNova-Semibold'),
+       url('ProximaNova-Semibold.woff2') format('woff2'),
+       url('ProximaNova-Semibold.woff') format('woff'),
+       url('ProximaNova-Semibold.ttf') format('truetype'),
+       url('ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg'),
+       url('ProximaNova-Semibold.eot') format('embedded-opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+

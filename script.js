@@ -15,6 +15,25 @@ $( document ).ready(function() {
     $('.close-side-button').on('click', function(){
         $('#navbarSide').removeClass('reveal');
         $('.overlay').hide();
-    });
-    
+    }); 
 }); 
+
+
+$(function () {
+  var lastScrollTop = 0;
+  var $navbar = $('.navbar');
+
+  $(window).scroll(function(event){
+    var st = $(this).scrollTop();
+
+    if (st > lastScrollTop) { // scroll down
+      $navbar.addClass("fade-out");
+      $navbar.removeClass("fade-in");
+    } 
+      else { // scroll up
+      $navbar.addClass("fade-in");
+      $navbar.removeClass("fade-out");  
+    }
+    lastScrollTop = st;
+  });
+});

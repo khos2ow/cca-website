@@ -117,6 +117,13 @@ hr {
     display: none;
 }
 
+#navbar.fade-in .navbar-toggler {
+    color: #ec1c23;
+}
+#navbar.fade-out .navbar-toggler {
+    color: #ec1c23;
+}
+
 #navbar .nav-item {
     margin-right: 35px;
 }
@@ -377,8 +384,8 @@ hr {
 
 #homepage .img-cube-mobile {
         display: none;
-    }
 }
+
 /*MOBILE SECOND CARD*/
 @media screen and (max-width : 768px) {
     #homepage #title-row-orangecard {
@@ -386,6 +393,7 @@ hr {
     background-color: #f5f7f1;
     padding: 100px 0 10px 0;
     }
+    
     #homepage .redorange-card.card-section {
         padding-top: 0;
     }
@@ -400,9 +408,11 @@ hr {
         position: relative;
         display:block;
     }
+    
     #homepage .redorange-card .text-row-orangecard {
         padding-top: 70px;
     }
+    
     #homepage .redorange-card h4 {
         font-size: 30px;
         color: #f5f7f1;
@@ -437,10 +447,12 @@ hr {
         font-size: 30px;
         margin-left: 20px;
     }
+    
     #homepage .tech-brief img {
         display: inline-block;
         height: 230px;
     }
+    
     #homepage .white-card .workloads-row p {
         text-align: left;
         margin-left: 40px;

@@ -1,29 +1,106 @@
 <nav id="navbar" class="navbar fixed-top navbar-expand-lg" role="navigation">
-    <a class="navbar-brand" href="#"><img class="logo-white" src="{{ "images/logowhite.png" | absURL }}" alt="cloud.ca"></a>
+    <a class="navbar-brand" href="#">
+    <img class="logo-red" src="{{ "images/logored.png" | absURL }}" alt="cloud.ca">
+    <img class="logo-white" src="{{ "images/logowhite.png" | absURL }}" alt="cloud.ca">
+    </a>
 
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class=" nav navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Why cloud.ca <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+             <li class="nav-item active dropdown">
+                <a
+                    class="nav-link"
+                    href="#"
+                    id="navbarDropdownMenuLink-1"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                        Why cloud.ca <span class="sr-only">(current)</span>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-1">
+
+                    <div class="arrow"></div>
+
+                        <div class="row ">
+                            <div class="col-sm-12">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Hyperscale comparison</a></li>
+                                    <li><a class="dropdown-item" href="#">Use cases</a></li>
+                                    <li><a class="dropdown-item" href="#">Locations</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a
                     class="nav-link"
                     href="#"
-                    id="navbarDropdownMenuLink"
+                    id="navbarDropdownMenuLink-2"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                        Product
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-2">
+
+                    <div class="arrow"></div>
+
+                        <div class="row ">
+                            <div class="col-sm-12">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Multi-tenant cloud</a></li>
+                                    <li><a class="dropdown-item" href="#">Storage</a></li>
+                                    <li><a class="dropdown-item" href="#">Dedicated infrastructure</a></li>
+                                    <li><a class="dropdown-item" href="#">Bare metal</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                 </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a
+                    class="nav-link"
+                    href="#"
+                    id="navbarDropdownMenuLink-3"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                        Pricing
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-3">
+
+                    <div class="arrow"></div>
+
+                        <div class="row ">
+                            <div class="col-sm-12">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                 </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a
+                    class="nav-link"
+                    href="#"
+                    id="navbarDropdownMenuLink-4"
                     data-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false">
                         Resources
                 </a>
 
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <div class="dropdown-menu large-menu" aria-labelledby="navbarDropdownMenuLink-4">
 
                     <div class="arrow"></div>
 
@@ -56,7 +133,7 @@
                                         <li><a class="dropdown-item" href="#">Careers</a></li>
                                     </ul>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-sm-3">
                                     <h5 class="dropdown-header">Sales</h5>
                                     <ul>
                                         <li><a class="dropdown-item" href="#">Contact us</a></li>

@@ -58,21 +58,63 @@ hr {
 #navbar {
     background-color: transparent;
     text-transform: uppercase;
-    padding: 0 100px 100px 120px;
+    padding: 0 100px 0 120px;
     font-size: 12px;
 }
-
-.fade-in {
+#navbar .logo-red {
+    display: none;
+}
+#navbar.fade-in {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.5s linear;
-
 }
 
-.fade-out {
+#navbar.fade-out {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
+#navbar.fade-in, 
+.fade-out {
+    backface-visibility: visible;
+    /* For browsers that do not support gradients */
+    background: #f5f7f1;
+    background: -webkit-linear-gradient(#f5f7f1, #ccc);
+    background: -o-linear-gradient(#f5f7f1, #ccc);
+    background: -moz-linear-gradient(#f5f7f1, #ccc);
+    background: linear-gradient(#f5f7f1, #ccc);
+}
+#navbar.fade-in a {
+    color: #ec1c23;
+}
+
+#navbar.fade-out a {
+    color: #ec1c23;
+}
+
+#navbar.fade-in .btn {
+    background-color: #ec1c23;
+    color: #f5f7f1;
+}
+
+#navbar.fade-out .btn {
+    background-color: #ec1c23;
+    color: #f5f7f1;
+}
+
+#navbar.fade-in .logo-red {
+    display: block;
+}
+#navbar.fade-out .logo-red {
+    display: block;
+}
+#navbar.fade-in .logo-white {
+    display: none;
+}
+#navbar.fade-out .logo-white {
+    display: none;
 }
 
 #navbar .nav-item {
@@ -107,13 +149,17 @@ hr {
     background: -moz-linear-gradient(#f5f7f1, #ccc));
     background: linear-gradient(#f5f7f1, #ccc);
 
-    width: 370px;
+    width: auto;
     left: 50%;
     right: auto;
     text-align: center;
     transform: translate(-50%, 0);
     border: none;
     padding: 15px;
+}
+
+#navbar .large-menu.dropdown-menu {
+    width: 370px;
 }
 
 #navbar a.dropdown-item {
@@ -423,8 +469,6 @@ hr {
     position: absolute;
     top: 0px;
     left: 50%;
-
-    transform: translateX(-25px);
 }
 
 /*MOBILE CALL TO ACTION CARD*/
@@ -437,6 +481,9 @@ hr {
         padding: 0;
     }
 
+    #homepage .call-to-action-card::before{
+        display: none;
+    }
     #homepage .call-to-action-card .row .col-sm-12 {
         position: relative;
     }

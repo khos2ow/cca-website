@@ -63,9 +63,10 @@ hr {
 }
 
 .fade-in {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.5s linear;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+
 }
 
 .fade-out {
@@ -331,7 +332,7 @@ hr {
 #homepage .img-cube-mobile {
         display: none;
     }
-
+}
 /*MOBILE SECOND CARD*/
 @media screen and (max-width : 768px) {
     #homepage #title-row-orangecard {
@@ -404,7 +405,26 @@ hr {
 #homepage .call-to-action-card {
     text-transform: uppercase;
     font-size: 24px;
-    text-align: center;
+    text-align: center; 
+    position: relative;
+}
+
+#homepage .call-to-action-card::before {
+    content: '';
+
+    width: 1px;
+    height: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 1px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+
+    transform: translateX(-25px);
 }
 
 /*MOBILE CALL TO ACTION CARD*/
@@ -544,6 +564,9 @@ hr {
     .footer .toggle-footer .btn {
         background-color: transparent;
         min-height: 40px;
+        color: #6d6e71;
+        font-size: 18px;
+        padding-left: 0;
     }
 
     .footer .toggle-footer .btn.collapse-footer.collapsed {

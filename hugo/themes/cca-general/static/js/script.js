@@ -28,19 +28,33 @@ var initScrollForNavBar = function() {
     var $navbar = $('.navbar');
 
     $(window).scroll(function(event) {
-        var st = $(this).scrollTop();
+        var currentScrollTop = $(this).scrollTop();
 
-        // scroll down
-        if (st > lastScrollTop) {
-            $navbar.addClass("fade-out");
-            $navbar.removeClass("fade-in");
+        // scrolling down
+        if (currentScrollTop > lastScrollTop + 50) {
+            $navbar.addClass('scroll-hidden');
+            $navbar.removeClass('scroll-visible');
+
+            lastScrollTop = currentScrollTop;
         }
-        // scroll up
-        else {
-            $navbar.addClass("fade-in");
-            $navbar.removeClass("fade-out");
+        // scrolling up
+        else if (currentScrollTop < lastScrollTop - 5) {
+            $navbar.addClass('scrolled');
+            $navbar.addClass('scroll-visible');
+            $navbar.removeClass('scroll-hidden');
+
+            lastScrollTop = currentScrollTop;
         }
 
-        lastScrollTop = st;
+        // at the top
+        if (currentScrollTop === 0) {
+            $navbar.removeClass('scrolled');
+            $navbar.removeClass('scroll-visible');
+            $navbar.removeClass('scroll-hidden');
+
+            lastScrollTop = currentScrollTop;
+        }
+
+        console.log(currentScrollTop);
     });
 };

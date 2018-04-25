@@ -67,13 +67,17 @@ li {
 #navbar {
     background-color: transparent;
     text-transform: uppercase;
-    padding: 0 100px 0 120px;
+    padding: 5px 100px 0 120px;
     font-size: 14px;
     font-family: "Proxima-Nova", sans-serif;
     font-weight: normal;
 
     transition: all linear 750ms;
     transition-property: opacity, background-color;
+}
+
+#navbar .logo-white {
+    margin-top: 5px;
 }
 
 #navbar .logo-red {
@@ -92,6 +96,7 @@ li {
 }
 
 #navbar.scrolled .logo-red {
+    margin: 5px 0;
     display: block;
 }
 
@@ -131,6 +136,11 @@ li {
     white-space: normal;
 }
 
+#navbar a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+
 #navbar .btn {
     background-color: #f5f7f1;
     border: 0;
@@ -139,6 +149,7 @@ li {
     font-size: 14px;
     font-family: "Proxima-Nova", sans-serif;
     font-weight: normal;
+    margin-top: 4px;
 }
 
 #navbar .navbar-toggler {
@@ -206,10 +217,20 @@ li {
 @media screen and (max-width : 768px) {
     #navbar .logo-white {
         height: 35px;
+        margin-top: 0;
+    }
+
+    #navbar.scrolled .logored {
+        display: inline-block;
+    }
+
+    #navbar.scrolled .logo-red {
+        height: 35px;
+        margin-top: 0;
     }
 
     #navbar {
-        padding: 15px 10px;
+        padding: 0 10px;
     }
 }
 
@@ -457,17 +478,25 @@ li {
     }
 
     #homepage .second-card h4 {
+        margin: 5px;
+        text-align: center;
         font-size: 30px;
         color: #f5f7f1;
         font-weight: 500;
         line-height: 1.5;
     }
 
-    #homepage .second-card a, li, p {
+    #homepage .second-card li, p, a {
+        margin: 5px;
         font-size: 24px;
+        text-align: center;
+    }
+
+    #homepage .second-card .learn-more-second-card {
+        padding-top: 10px;
+        text-align: center;
     }
 }
-
 /* THIRD CARD */
 #homepage .features-card {
     background-color: #f5f7f1;
@@ -486,16 +515,13 @@ li {
     margin-top: 10px;
 }
 
-#homepage .features-card-card .text-row-features-card {
-    padding-top: 100px;
+#homepage .features-card .text-row-features-card h4 {
+    margin-top: 100px;
 }
 
 
 /*MOBILE THIRD CARD*/
 @media screen and (max-width : 768px) {
-    #homepage .features-card .card-title {
-        text-align: left;
-    }
 
     #homepage .features-card h4 {
         font-size: 30px;
@@ -508,7 +534,6 @@ li {
     }
 
     #homepage .features-card .card-section .workloads-row p {
-        text-align: left;
         margin-left: 40px;
     }
 }

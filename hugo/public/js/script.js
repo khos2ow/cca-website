@@ -1,7 +1,25 @@
 $(document).ready(function() {
     initNavBarSlideOut();
     initScrollForNavBar();
+
+    setHeightsForParallax();
 });
+
+$(window).on('resize', function () {
+    setHeightsForParallax();
+});
+
+var setHeightsForParallax = function() {
+    // Get and set the intial height for the cards so that when the
+    // elements inside become 'fixed', the overall height doesn't change
+    $('.first-card').css({
+        height: $('.first-card').outerHeight()
+    });
+
+    $('.second-card').css({
+        height: $('.second-card .title-row-secondcard').outerHeight() + $('.second-card .text-row-secondcard').outerHeight()
+    });
+};
 
 var initNavBarSlideOut = function() {
     // Open navbarSide when button is clicked
@@ -58,22 +76,32 @@ var initScrollForNavBar = function() {
     });
 };
 
-
-
-
 var setLogo = function() {
-    if ($(window).scrollTop() > $('.first-card').offset(200).top) {
-        $('.complex-clouds').addClass('fixed')
+    var currentScrollTop = $(window).scrollTop();
+
+    var firstCardOffset = 553;
+
+    var secondCardDifference = $('.second-card').offset().top - currentScrollTop;
+    $('.title-row-secondcard').css(
+        'clip',
+        'rect(' + (secondCardDifference - 100) + 'px, 9000px, 500px, 0)'
+    );
+
+    if (currentScrollTop >= $('.first-card').offset().top + firstCardOffset) {
+        $('.first-card').addClass('fixed');
     }
     else {
-        $('.complex-clouds').removeClass('fixed')
+        $('.first-card').removeClass('fixed');
+    }
+
+    if (currentScrollTop >= $('.second-card').offset().top) {
+        $('.second-card').removeClass('fixed');
+    }
+    else {
+        $('.second-card').addClass('fixed');
     }
 };
-
-
 
 $(document).scroll(function() {
   setLogo();
 });
-
-setLogo();

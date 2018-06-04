@@ -17,7 +17,7 @@ var setHeightsForParallax = function() {
     });
 
     $('.second-card').css({
-        height: $('.second-card .title-row-secondcard').outerHeight() + $('.second-card .text-row-secondcard').outerHeight()
+        height: $('.second-card .title-row-secondcard').outerHeight() + $('.second-card .text-row-secondcard').outerHeight() + 35
     });
 };
 
@@ -77,14 +77,23 @@ var initScrollForNavBar = function() {
 };
 
 var setLogo = function() {
+    var isMobileWidth = $(window).width() <= 768;
     var currentScrollTop = $(window).scrollTop();
 
-    var firstCardOffset = 553;
+    var firstCardOffset = $('.first-card .row').first().outerHeight() - 100;
+    if (isMobileWidth) {
+        firstCardOffset += 100;
+    }
+
+    var secondCardTopOffset = 100;
+    if (isMobileWidth) {
+        secondCardTopOffset = 0;
+    }
 
     var secondCardDifference = $('.second-card').offset().top - currentScrollTop;
     $('.title-row-secondcard').css(
         'clip',
-        'rect(' + (secondCardDifference - 100) + 'px, 9000px, 500px, 0)'
+        'rect(' + (secondCardDifference - secondCardTopOffset) + 'px, 9999px, 9999px, 0)'
     );
 
     if (currentScrollTop >= $('.first-card').offset().top + firstCardOffset) {

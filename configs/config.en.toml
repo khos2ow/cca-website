@@ -1,0 +1,17 @@
+
+# === English ===
+[languages.en]
+  title        = "cloud.ca"
+  weight       = 1
+  languageCode = "en"
+  languageName = "English"
+
+[languages.en.params]
+  langcode    = "en"
+  description = ""
+  keywords    = ""
+
+[languages.en.params.copyright]
+  prefix = ""
+  startYear = "2015"
+  suffix = ""

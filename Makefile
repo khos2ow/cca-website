@@ -39,4 +39,5 @@ build-conf:
 	cat config.common.toml configs/config.en.toml configs/config.fr.toml > config.toml
 
 run: build
-	./binaries/hugo server --theme cca-general --buildDrafts
+	#./binaries/hugo server --theme cca-general --buildDrafts
+	hugo server --theme cca-general --buildDrafts

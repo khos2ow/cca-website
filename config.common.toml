@@ -1,0 +1,76 @@
+baseurl                       = "https://cloud.ca"
+title                         = "cloud.ca"
+
+theme                         = "cca-general"
+
+googleAnalytics               = ""
+
+paginate                      = 20
+preserveTaxonomyNames         = true
+
+canonifyurls                  = true
+enableRobotsTXT               = true
+
+defaultContentLanguage        = "en"
+languagecode                  = "en"
+
+[params]
+  # Twitter Cards
+  images             = ["images/avatar.png"]
+  [social]
+    twitter          = "cloud.ca"
+
+# === STATIC VERSION ===
+[params.version]
+  css = "1"
+  js  = "2"
+
+# === MAIN MENU (NAME = I18N ID) ===
+[params.home]
+  name   = "menu_home"
+  url    = "/"
+  weight = 1
+
+[[menu.main]]
+  name   = "menu_about"
+  weight = 2
+  url    = "/about/"
+[[menu.main]]
+  name   = "menu_posts"
+  weight = 3
+  url    = "/posts/"
+
+# === SOCIAL LINKS ===
+[[params.social]]
+  weight = 1
+  type   = "r"
+  icon   = "envelope"
+  url    = "info@cloud.ca"
+[[params.social]]
+  weight = 2
+  type   = "b"
+  icon   = "facebook"
+  url    = "https://facebook.com/cloud.ca"
+[[params.social]]
+  weight = 5
+  type   = "b"
+  icon   = "twitter"
+  url    = "https://twitter.com/cloud.ca/"
+[[params.social]]
+  weight = 6
+  type   = "b"
+  icon   = "linkedin"
+  url    = "https://linkedin.com/in/cloud.ca/"
+[[params.social]]
+  weight = 4
+  type   = "b"
+  icon   = "google"
+  url    = "https://plus.google.com/cloud.ca"
+[[params.social]]
+  weight = 7
+  type   = "b"
+  icon   = "youtube"
+  url    = "https://youtube.com/cloud.ca"
+
+# === TRANSLATIONS ===
+[languages]

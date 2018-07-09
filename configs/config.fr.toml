@@ -1,0 +1,17 @@
+
+# === French ===
+[languages.fr]
+  title        = "cloud.ca"
+  weight       = 2
+  languageCode = "fr"
+  languageName = "French"
+
+[languages.fr.params]
+  langcode    = "fr"
+  description = ""
+  keywords    = ""
+
+[languages.fr.params.copyright]
+  prefix = ""
+  startYear = "2015"
+  suffix = ""

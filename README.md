@@ -15,3 +15,19 @@ $ npm install less -g
 $ npm install uglifycss -g
 $ npm install uglify-js -g
 ```
+
+
+Build Project
+-------------
+
+``` bash
+$ make build
+```
+
+
+Run Project
+-----------
+
+``` bash
+$ make run
+```

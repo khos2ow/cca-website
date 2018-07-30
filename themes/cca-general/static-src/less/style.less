@@ -24,21 +24,26 @@ body {
     overflow-x: hidden;
 }
 
-/* TODO: Define h1 default size  */
 
 li {
     list-style: none;
 }
 
 
+#homepage h1 {
+    font-size: 70px;
+    font-family: "Proxima-Nova", sans-serif;
+    font-weight: lighter;
+}
+
 #homepage h2 {
-    font-size: 90px;
+    font-size: 30px;
     font-family: "Proxima-Nova", sans-serif;
     font-weight: lighter;
 }
 
 #homepage h3 {
-    font-size: 48px;
+    font-size: 40px;
     margin-bottom: 20px;
     font-family: "Proxima-Nova", sans-serif;
     font-weight: lighter;
@@ -320,52 +325,30 @@ li {
     color: #f5f7f1;
     font-family: "Proxima-Nova", sans-serif;
     position: relative;
-    z-index: 100;
-    /* margin-top: 100px; */
+
+    padding-bottom: 200px;
 }
 
-/* #homepage .first-card .complex-clouds {
-    overflow: hidden;
-} */
+
+#homepage .first-card h1 {
+    padding-top: 300px;
+}
 
 #homepage .first-card h3 {
-    padding-top: 230px;
+    padding: 300px 0 75px;
+    text-align: center;
 }
 
-#homepage .first-card h4 {
-    padding: 5px 0 300px;
+#homepage .first-card p {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 10px;
+    text-align: center;
 }
-
 #homepage .card-title {
     text-align: center;
 }
 
-#homepage .first-card.fixed .complex-clouds {
-    position: fixed;
-    top: 100px;
-    left: 0;
-    height: 570px;
-
-    /* Removing left/right margin from Bootstrap  */
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#homepage .first-card .complex-clouds {
-    position: relative;
-    height: 570px;
-    /* min-width: 1120px; */
-}
-
-#homepage .first-card .img-triangle {
-    position: absolute;
-    top: 70px;
-    right: 120px;
-
-    width: 510px;
-    height: 453px;
-}
 
 /* MEDIUM FIRST CARD */
 @media screen and (max-width : 1024px) {
@@ -668,34 +651,33 @@ li {
 
 /* THIRD CARD */
 #homepage .features-card {
-    background-color: #f5f7f1;
+    background-color: #fff;
     text-align: center;
     color: #ec1c23;
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     position: relative;
-    z-index: 300;
 }
 
-#homepage .features-card h4 {
-    font-size: 30px;
-    font-weight: normal;
+#homepage .features-card h3 {
+    padding-bottom: 80px;
 }
 
 #homepage .features-card p {
     font-size: 18px;
-    font-weight: normal;
     margin-top: 10px;
+    color: #ccc;
 }
 
 #homepage .features-card .text-row-features-card h4 {
-    margin-top: 100px;
+    padding: 60px 0 20px 0;
+    font-size: 40px;
 }
 
 
 /*MOBILE THIRD CARD*/
 @media screen and (max-width : 768px) {
 
-    #homepage .features-card h4 {
+    #homepage .features-card h3 {
         font-size: 30px;
         margin-left: 20px;
     }

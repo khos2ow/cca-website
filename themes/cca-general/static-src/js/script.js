@@ -2,24 +2,7 @@ $(document).ready(function() {
     initNavBarSlideOut();
     initScrollForNavBar();
 
-    setHeightsForParallax();
 });
-
-$(window).on('resize', function () {
-    setHeightsForParallax();
-});
-
-var setHeightsForParallax = function() {
-    // Get and set the intial height for the cards so that when the
-    // elements inside become 'fixed', the overall height doesn't change
-    $('.first-card').css({
-        height: $('.first-card').outerHeight()
-    });
-
-    $('.second-card').css({
-        height: $('.second-card .title-row-secondcard').outerHeight() + $('.second-card .text-row-secondcard').outerHeight() + 35
-    });
-};
 
 var initNavBarSlideOut = function() {
     // Open navbarSide when button is clicked
@@ -55,62 +38,14 @@ var initScrollForNavBar = function() {
 
             lastScrollTop = currentScrollTop;
         }
-        // scrolling up
-        else if (currentScrollTop < lastScrollTop - 5) {
-            $navbar.addClass('scrolled');
-            $navbar.addClass('scroll-visible');
-            $navbar.removeClass('scroll-hidden');
-
-            lastScrollTop = currentScrollTop;
-        }
 
         // at the top
         if (currentScrollTop === 0) {
-            $navbar.removeClass('scrolled');
             $navbar.removeClass('scroll-visible');
-            $navbar.removeClass('scroll-hidden');
+           $navbar.removeClass('scroll-hidden');
 
-            lastScrollTop = currentScrollTop;
+           lastScrollTop = currentScrollTop;
         }
 
     });
 };
-
-var setLogo = function() {
-    var isMobileWidth = $(window).width() <= 768;
-    var currentScrollTop = $(window).scrollTop();
-
-    var firstCardOffset = $('.first-card .row').first().outerHeight() - 100;
-    if (isMobileWidth) {
-        firstCardOffset += 100;
-    }
-
-    var secondCardTopOffset = 100;
-    if (isMobileWidth) {
-        secondCardTopOffset = 0;
-    }
-
-    var secondCardDifference = $('.second-card').offset().top - currentScrollTop;
-    $('.title-row-secondcard').css(
-        'clip',
-        'rect(' + (secondCardDifference - secondCardTopOffset) + 'px, 9999px, 9999px, 0)'
-    );
-
-    if (currentScrollTop >= $('.first-card').offset().top + firstCardOffset) {
-        $('.first-card').addClass('fixed');
-    }
-    else {
-        $('.first-card').removeClass('fixed');
-    }
-
-    if (currentScrollTop >= $('.second-card').offset().top) {
-        $('.second-card').removeClass('fixed');
-    }
-    else {
-        $('.second-card').addClass('fixed');
-    }
-};
-
-$(document).scroll(function() {
-  setLogo();
-});

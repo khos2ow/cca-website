@@ -1,11 +1,15 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Cloud.ca</title>
+        {{ partial "head" . }}
     </head>
     <body>
-        {{ block "main" . }}
-
-        {{end}}
+        {{ partial "navbar" . }}
+        {{ partial "title-card" . }}
+        {{ partial "content-card" . }}
+        {{ partial "services-card" . }}
+        {{partial "footer" . }}
     </body>
 </html>
+
+    {{ partial "js" . }}

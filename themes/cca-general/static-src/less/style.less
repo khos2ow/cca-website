@@ -317,6 +317,22 @@ margin-left: auto;
 margin-right: auto;
 }
 
+#homepage .intro-card img.canadian-owned {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#homepage .intro-card img.easy-access {
+    width: 130px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+#homepage .intro-card img.flexible-offerings {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 /* MEDIUM INTRO CARD */
 @media screen and (max-width : 1024px) {
     #homepage .first-card .img-triangle {
@@ -631,6 +647,15 @@ margin-right: auto;
     }
 
     /* Footer Content */
+
+    #footer #menu-items .card-section .footer h5 {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #ec1c23;
+        font-weight: 600;
+        font-family: "Proxima-Nova",sans-serif;
+    }
+
     .footer a {
         font-size: 18px;
     }
@@ -688,27 +713,79 @@ margin-right: auto;
 
 .content-main-nav {
     background-color: #fff;
+    padding: 0;
+}
+
+.content-main-nav a {
+    text-transform: uppercase;
+    color: #6d6e71;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 0 10px;
+    margin: 0 40px;
+    border-top: 4px solid transparent;
+
+}
+
+.content-main-nav a.active {
+    border-top: 4px solid #ec1c23;
+}
+.content-main-nav a:hover {
+    border-top: 4px solid #ec1c23;
 }
 
 .content-secondary-nav {
-        /* For browsers that do not support gradients */
-        background: #f5f7f1;
+    /* For browsers that do not support gradients */
+    background: #f5f7f1;
 
-        background: -webkit-linear-gradient( to right, #f5f7f1, #ccc);
-        background: -o-linear-gradient(to right, #f5f7f1, #ccc);
-        background: -moz-linear-gradient(to right, #f5f7f1, #ccc);
-        background: linear-gradient(to right, #f5f7f1, #ccc);
-    }
+    background: -webkit-linear-gradient( to right, #f5f7f1, #ccc);
+    background: -o-linear-gradient(to right, #f5f7f1, #ccc);
+    background: -moz-linear-gradient(to right, #f5f7f1, #ccc);
+    background: linear-gradient(to right, #f5f7f1, #ccc);
+
+    padding: 0 0 0 330px;
+}
+
+.content-secondary-nav .navbar-nav .nav-item .nav-link {
+    text-transform: uppercase;
+    color: #6d6e71;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+
+.content-secondary-nav a.active {
+    background-color: #fff;
+}
+.content-secondary-nav a:hover {
+    background-color: #fff;
+}
+
+.content-card {
+    padding: 120px 0;
+}
+
+.content-card h1 {
+    text-transform: uppercase;
+    color: #6d6e71;
+    font-size: 13px;
+    font-weight: 600;
+
+}
 
 
-    .services-card {
-        /* For browsers that do not support gradients */
-        background: #ec1c23;
 
-        background: -webkit-linear-gradient(#ec1c23, #1d2671);
-        background: -o-linear-gradient(#ec1c23, #1d2671);
-        background: -moz-linear-gradient(#ec1c23, #1d2671);
-        background: linear-gradient(#ec1c23, #1d2671);
 
-        padding: 180px 0 80px;
-        }
+
+
+.services-card {
+    /* For browsers that do not support gradients */
+    background: #ec1c23;
+
+    background: -webkit-linear-gradient(#ec1c23, #1d2671);
+    background: -o-linear-gradient(#ec1c23, #1d2671);
+    background: -moz-linear-gradient(#ec1c23, #1d2671);
+    background: linear-gradient(#ec1c23, #1d2671);
+
+    padding: 180px 0 80px;
+}

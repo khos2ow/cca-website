@@ -23,7 +23,7 @@ clean-css:
 clean-js:
 	rm -f $(JS_DIR)/$(JS_MIN_FILE)
 
-build: build-css build-js build-conf
+prepare: build-css build-js build-conf
 	cd themes/cca-general && $(MAKE) build
 
 build-css: clean-css
@@ -41,7 +41,12 @@ build-js: clean-js
 build-conf:
 	cat config.common.toml configs/config.en.toml configs/config.fr.toml > config.toml
 
-run: build
+build: prepare
+	# pass arguments <arg1> and <arg2> to the 'hugo' binary by running: make -- build <arg1> <arg2>
+	# EG: make -- build --buildDrafts -b http://rebrand.cloud.ca
+	./hugow --theme cca-general $(filter-out $@,$(MAKECMDGOALS))
+
+run: prepare
 	# pass arguments <arg1> and <arg2> to the 'hugo' binary by running: make -- run <arg1> <arg2>
 	# EG: make -- run --buildDrafts -b http://rebrand.cloud.ca
 	./hugow server --theme cca-general $(filter-out $@,$(MAKECMDGOALS))

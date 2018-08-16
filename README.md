@@ -27,6 +27,11 @@ Build Project
 make build
 ```
 
+Pass additional arguments to the `hugo` command by using the following format.
+```
+make -- build --buildDrafts -b http://rebrand.cloud.ca
+```
+
 Run Project
 -----------
 

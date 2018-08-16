@@ -1,3 +1,6 @@
+# inject the variables required to deploy, if available (but don't track them in git)
+-include ./config.mk
+
 # LESS params
 LESS_DIR = ./static/less
 LESS_FILE = main.less
@@ -42,3 +45,6 @@ run: build
 	# pass arguments <arg1> and <arg2> to the 'hugo' binary by running: make -- run <arg1> <arg2>
 	# EG: make -- run --buildDrafts -b http://rebrand.cloud.ca
 	./hugow server --theme cca-general $(filter-out $@,$(MAKECMDGOALS))
+
+deploy:
+	swiftly -dir=public -identity=$(IDENTITY) -password=$(PASSWORD) -domain=$(DOMAIN)

@@ -2,6 +2,7 @@
 .vscode
 assets
 public
+config.mk
 config.toml
 .hugo/*
 !.hugo/version

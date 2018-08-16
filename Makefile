@@ -39,4 +39,6 @@ build-conf:
 	cat config.common.toml configs/config.en.toml configs/config.fr.toml > config.toml
 
 run: build
-	./hugow server --theme cca-general --buildDrafts
+	# pass arguments <arg1> and <arg2> to the 'hugo' binary by running: make -- run <arg1> <arg2>
+	# EG: make -- run --buildDrafts -b http://rebrand.cloud.ca
+	./hugow server --theme cca-general $(filter-out $@,$(MAKECMDGOALS))

@@ -5,7 +5,7 @@ Install Dependencies
 --------------------
 
 We're using `hugow` which will download specified Hugo binary defined in `.hugo/version`
-(currently: `v0.45.1`). If you need to use Hugo binary directly instead of `make` command,
+(currently: `v0.46`). If you need to use Hugo binary directly instead of `make` command,
 make sure to execute: `./hugow` instead of plain `hugo`.
 
 **MacOS or Linux**
@@ -19,61 +19,88 @@ npm install uglify-js -g
 ```
 
 *MacOS*
+
 ```bash
 brew install fswatch
 ```
 
 *Linux*
-```
-# ref: https://github.com/emcrisostomo/fswatch
-```
-
-Build Project
--------------
 
 ```bash
-make build
+apt install fswatch
 ```
 
-Pass additional arguments to the `hugo` command by using the following format.
-```
-make -- build --buildDrafts -b http://rebrand.cloud.ca
+Prepare Project
+-------------
+
+This will compile and concatenate all the static resources (`less`, `css` and `js` files).
+
+```bash
+make prepare
 ```
 
 Run Project
 -----------
+
+To run the site locally and access it on http://localhost:1313/
 
 ```bash
 make run
 ```
 
 Pass additional arguments to the `hugo` command by using the following format.
-```
-make -- run --buildDrafts -b http://rebrand.cloud.ca
+
+```bash
+make -- run --buildDrafts --baseURL http://rebrand.cloud.ca
 ```
 
 Watch For Changes
 -----------------
 
-Once you run `make run` you will want to have changes to the `less` and other files in the `static-src` folder to get rebuild.  In order to do this, we have a new `make watch` command.
+Once you run `make run` you will want to have changes to the `less` and other files in the `resources` folder to get rebuild.  In order to do this, you need to run the command in new terminal.
 
 ```bash
-# in a new terminal tab
 make watch
 ```
 
+Build Project
+-------------
+
+To build the site and have it available in `public` folder.
+
+```bash
+make build
+```
+
+Pass additional arguments to the `hugo` command by using the following format.
+
+```bash
+make -- build --buildDrafts --baseURL http://rebrand.cloud.ca
+```
+
+**Note** when you run `make build` the `public` folder will be force deleted before being rebuilt.
+
 Deploy Project
 --------------
+
 Deploy requires that you have an OpenStack Swift account which you can push the files to.  Additionally, deploy depends on the following syncing tool: https://github.com/swill/swiftly
 
 Add the following details to the file: `./config.mk`
-```
+
+```toml
 IDENTITY = <tenant>:<user>
 PASSWORD = <password>
 DOMAIN = <domain>
 ```
 
-Then deploy:
+build first:
+
+```bash
+make build [-- additional flags]
 ```
+
+then deploy:
+
+```bash
 make deploy
 ```

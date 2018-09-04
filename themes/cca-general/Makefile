@@ -3,7 +3,7 @@ TMP_DIR = /tmp
 TMP_CSS_FILE = tmp.css
 
 # LESS params
-LESS_DIR = ./resources/less
+LESS_DIR = ./assets/less
 LESS_FILE = style.less
 
 # CSS params
@@ -11,7 +11,7 @@ CSS_DIR = ./static/css
 CSS_FILE = style.min.css
 
 # JS params
-JS_SRC_DIR   = ./resources/js
+JS_SRC_DIR   = ./assets/js
 JS_SRC_FILE  = script.js
 JS_DEST_DIR  = ./static/js
 JS_DEST_FILE = script.min.js

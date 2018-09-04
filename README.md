@@ -5,7 +5,7 @@ Install Dependencies
 --------------------
 
 We're using `hugow` which will download specified Hugo binary defined in `.hugo/version`
-(currently: `v0.46`). If you need to use Hugo binary directly instead of `make` command,
+(currently: `v0.47.1`). If you need to use Hugo binary directly instead of `make` command,
 make sure to execute: `./hugow` instead of plain `hugo`.
 
 **MacOS or Linux**
@@ -27,13 +27,13 @@ brew install fswatch
 *Linux*
 
 ```bash
-apt install fswatch
+apt install inotify-tools
 ```
 
 Prepare Project
 -------------
 
-This will compile and concatenate all the static resources (`less`, `css` and `js` files).
+This will compile and concatenate all the static resources (`less`, `css`, `js` and `config` files).
 
 ```bash
 make prepare

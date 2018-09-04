@@ -22,7 +22,7 @@ languagecode                  = "en"
 
 # === STATIC VERSION ===
 [params.version]
-  css = "1"
+  css = "2"
   js  = "2"
 
 # === MAIN MENU (NAME = I18N ID) ===

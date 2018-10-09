@@ -1,4 +1,6 @@
 .pricing {
+
+    /* CONTENT-MAIN-NAVBAR */
   .content-main-nav {
     background-color: @global-absolute-white;
     padding: 0;
@@ -11,6 +13,7 @@
       padding: 6px 0 10px;
       margin: 0 40px;
       border-top: 4px solid transparent;
+      width: 100%;
 
       &.active,
       &:hover {
@@ -19,6 +22,19 @@
     }
   }
 
+      /* MOBILE CONTENT-MAIN-NAVBAR */
+
+  @media screen and (max-width : 992px) {
+    .content-main-nav {
+      display: none;
+    }
+
+  }
+
+
+
+
+    /* CONTENT-SECONDARY-NAVBAR */
   .content-secondary-nav {
     /* For browsers that do not support gradients */
     background: @global-official-white;
@@ -28,7 +44,7 @@
     background: -moz-linear-gradient(to right, @global-official-white, @global-official-light-grey);
     background: linear-gradient(to right, @global-official-white, @global-official-light-grey);
 
-    padding: 0 0 0 330px;
+    padding: 0;
 
     .navbar-nav .nav-item .nav-link {
       text-transform: uppercase;
@@ -44,6 +60,7 @@
     }
   }
 
+    /* CONTENT-CARD*/
   .content-card {
     padding: 120px 0;
 
@@ -64,7 +81,12 @@
       color: @global-official-dark-grey;
       padding: 10px 20px 0 15px;
     }
-
+    .lesson-video {
+        padding-top: 55px;
+    }
+    .special-offer-row {
+        padding-left: 9px;
+    }
     .next-button a {
       font-size: 17px;
       font-weight: bold;
@@ -80,6 +102,27 @@
       margin: 7px 7px;
     }
   }
+
+  /* MOBILE CONTENT-CARD*/
+  @media screen and (max-width : 992px) {
+
+      .content-card {
+        padding: 60px 0;
+        }
+          .content-card .special-offer-row {
+          padding-left: 0;
+          text-align: center;
+        }
+        .content-card .lesson-video {
+            padding-top: 10px;
+        }
+        .content-card .next-button {
+            padding-top: 20px;
+            padding-left: 0;
+            padding-bottom: 40px;
+        }
+  }
+
 
   .services-card {
     /* For browsers that do not support gradients */
@@ -103,7 +146,7 @@
       text-decoration: underline;
     }
 
-    /* COmpute */
+    /* COMPUTE */
     .compute-price-row {
       margin-top: 20px;
       padding-left: 30px;
@@ -116,34 +159,41 @@
         }
 
         .compute-price-p {
-          padding-top: 20px;
-          margin-bottom: 5px;
+          margin-bottom: 0;
+        }
+
+        .whitespace-group {
+          white-space: nowrap;
         }
 
         .dollar-sign {
           font-size: 36px;
+          line-height: 60px;
           font-weight: lighter;
-          line-height: 0;
+
           position: relative;
-          vertical-align: baseline;
-          top: -10px;
+          top: -12px;
         }
+
         .cost-amount {
           font-size: 60px;
+          line-height: 60px;
           font-weight: lighter;
-          line-height: 0;
         }
+
         .monthly-word {
           font-size: 12px;
+          line-height: 12px;
           font-weight: lighter;
-          line-height: 0
         }
-        .vcpu-gb {
-          padding-left: 30px;
+
+        .plan-specs {
           font-size: 14px;
-          line-height: 0;
-          position :relative;
-          top: 10px;
+          position: relative;
+          top: 0;
+          left: 27px;
+          margin-right: 27px;
+          margin-bottom: 0;
         }
       }
     }
@@ -153,14 +203,50 @@
       text-align: right;
     }
 
+    /* MOBILE COMPUTE*/
+
+    @media screen and (max-width : 992px) {
+
+        .compute h3 {
+            margin-bottom: 40px;
+            margin-left: 10px;
+        }
+        .compute-price-col {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .other-compute {
+            text-align: left;
+            margin-left: 15px;
+        }
+
+    .with-line {
+        position: relative;
+
+        &:before {
+          content: '';
+          width: 30px;
+          height: 1px;
+          border-style: solid;
+          border-width: 1px;
+          border-color: @global-official-light-grey;
+          background-color: @global-official-light-grey;
+          opacity: 0.5;
+          border-radius: 1px;
+          position: absolute;
+          top: -25px;
+        }
+      }
+    }
 
 
-    /* Storage */
+    /* STORAGE */
     .storage {
       h6 {
         text-transform: uppercase;
         font-size: 15px;
         margin: 20px 0 20px 20px;
+        width: 100%;
       }
       .block-storage {
         border-right: 1px solid #fff;
@@ -171,7 +257,7 @@
       .storage-3 {
         border-top: 1px solid #fff;
         border-bottom: 1px solid #fff;
-        margin-right: 215px;
+        margin-right: 30px;
       }
       .dollar-sign-storage {
         font-size: 18px;
@@ -186,6 +272,11 @@
         font-weight: lighter;
         line-height: 0;
       }
+      .monthly-word {
+            font-size: 12px;
+            font-weight: lighter;
+            line-height: 0;
+      }
       .IOPS-GB {
         font-size: 14px;
         padding-left: 17px;
@@ -194,16 +285,33 @@
       .storage-amount {
         margin: 35px auto 0;
       }
-      .with-right-border {
-        border-right: 1px solid #fff;
-        padding-right: 0;
-      }
+
       .storage-option {
-        padding-right: 0;
+        width: 100%;
+        height: 105px;
+        line-height: 20px;
       }
+
+      .storage-option::after {
+        content: ' ';
+        background: #fff;
+        width: 1px;
+        height: 50%;
+
+        position: absolute;
+        top: 25%;
+        right: 0;
+      }
+
+      .storage-option:last-child::after {
+        display: none;
+      }
+
       .storage-3-option {
-        padding-bottom: 46px;
+          width:100%;
+          height:105px;
       }
+
       .additional-performance {
         font-size: 12px;
         margin-top: 20px;
@@ -211,7 +319,67 @@
       }
     }
 
-    /* Networking */
+
+    /* MOBILE STORAGE*/
+    @media screen and (max-width : 992px) {
+      .storage h3 {
+        margin-left: 10px;
+      }
+
+      .storage .block-storage {
+          border-right: 0 solid #fff;
+          border-top: 0 solid #fff;
+          border-bottom: 0 solid #fff;
+          margin-left: 5px;
+      }
+
+      .storage .storage-3 {
+        border-top: 0 solid #fff;
+        border-bottom: 0 solid #fff;
+        margin-right: 0;
+        margin-left: 10px;
+      }
+        storage .with-line {
+          position: relative;
+
+          &:before {
+            content: '';
+            width: 30px;
+            height: 1px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: @global-official-light-grey;
+            background-color: @global-official-light-grey;
+            opacity: 0.5;
+            border-radius: 1px;
+            position: absolute;
+            top: 0;
+          }
+        }
+
+         .storage .additional-performance {
+             margin-left: 40px;
+             margin-right: 30px;
+             position: relative;
+
+             &:before {
+               content: '';
+               width: 30px;
+               height: 1px;
+               border-style: solid;
+               border-width: 1px;
+               border-color: @global-official-light-grey;
+               background-color: @global-official-light-grey;
+               opacity: 0.5;
+               border-radius: 1px;
+               position: absolute;
+               top: -24px;
+         }
+     }
+
+    }
+
+    /* NETWORKING */
     .networking {
       h3 {
         padding-bottom: 30px;
@@ -227,7 +395,14 @@
       }
     }
 
-    /* License */
+    /* MOBILE NETWORKING */
+    @media screen and (max-width : 992px) {
+        .networking h3 {
+            margin-left: 10px;
+        }
+    }
+
+    /* LICENSES */
     .licenses-term-discounts {
       h3 {
         padding-bottom: 10px;
@@ -256,18 +431,42 @@
       }
     }
 
-    /* Contact Form */
+    /* MOBILE LICENSES*/
+    @media screen and (max-width : 992px) {
+        .licenses-term-discounts h3 {
+            padding-left: 0;
+            text-align: center;
+          }
+        .licenses-term-discounts p {
+          padding-left: 15px;
+          padding-right: 15px;
+          text-align: center;
+        }
+
+        .licenses-term-discounts .license-mobility p {
+            text-align: center;
+        }
+
+        .licenses-term-discounts .buttons-row {
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+
+    /* CONTACT FORM */
     .contact-form {
       h5 {
         font-size: 28px;
         font-weight: lighter;
         padding: 80px 0 20px;
+        color: @global-absolute-white;
+        text-transform: initial;
       }
       .form-control {
         border: none;
         border-radius: 0;
         background-color: rgba(249, 249, 249, 0.1);
-        color: #fff;
+        color: @global-absolute-white;
         text-transform: uppercase;
         font-size: 18px;
         padding: 20px;
@@ -317,17 +516,49 @@
       }
     }
 
-    /* Services */
+    /* MOBILE CONTACT FORM */
+
+    @media screen and (max-width : 992px) {
+      .contact-form .small-box-col-1 {
+        padding-right: 15px;
+      }
+      .contact-form .small-box-col-2 {
+          padding-left: 15px;
+      }
+    }
+
+    /* SERVICES CARD*/
     .services-list h3 {
       margin-top: 60px;
     }
     .services-list img {
       margin-top: 60px;
+      max-width: 120%;
       resize: 120%;
     }
     .services-list p {
       font-size: 18px;
       margin: 10px 0 0 20px;
     }
+
   }
+  /*MOBILE SERVICES CARD*/
+  @media screen and (max-width : 992px) {
+      .services-list img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+
+      }
+
+      .services-list h3 {
+          text-align: center;
+      }
+
+      .services-list p {
+          text-align: center;
+      }
+  }
+
+
 }

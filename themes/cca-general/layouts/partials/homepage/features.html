@@ -14,14 +14,9 @@
       </div>
     </div>
 
-    <div class="row clouds-are-complex">
-      <div class="col-lg-4 offset-lg-4  col-sm-12">
-        <img class="img-fluid" src="{{ "images/clouds-are-complex.gif" | absURL }}">
-      </div>
-    </div>
     <div class="row technical-brief">
       <div class="col-sm-12">
-        <h3>Technical Brief</h3>
+        <h3>Technical brief</h3>
 
         <div class="row col-lg-10 offset-lg-1 col-sm-12">
           {{ range sort .Site.Data.home.technical ".weight" }}
@@ -30,6 +25,12 @@
             <p>{{ .text }}</p>
           </div>
           {{ end }}
+        </div>
+
+        <div class="row clouds-are-complex">
+          <div class="col-lg-4 offset-lg-4  col-sm-12">
+            <img class="img-fluid" src="{{ "images/clouds-are-complex.gif" | absURL }}">
+          </div>
         </div>
       </div>
     </div>

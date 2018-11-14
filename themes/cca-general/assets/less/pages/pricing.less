@@ -704,15 +704,17 @@
     }
 
     /* CONTACT FORM */
+
+    .contact-form {
+      padding-left: 0;
+    }
     .contact-form {
       h5 {
         font-size: 28px;
         font-weight: lighter;
-        padding: 150px 20px 20px;
+        padding: 150px 20px 20px 0;
         color: @global-absolute-white;
         text-transform: initial;
-        max-width: 50%;
-        margin: auto;
       }
       .form-control {
         border: none;
@@ -721,7 +723,6 @@
         color: @global-absolute-white;
         text-transform: uppercase;
         font-size: 18px;
-        padding: 20px;
         line-height: 18px;
         height: 62px;
       }
@@ -765,6 +766,17 @@
       .form-control:focus {
         background-color: rgba(249, 249, 249, 0.1);
         color: #fff;
+      }
+      .special-offers-services {
+        background-color: #fff;
+        padding: 10px 15px;
+        margin: 7px 7px;
+      }
+      a.btn.special-offers-services {
+        font-size: 13px;
+        color: #f16529;
+        text-decoration: none;
+        text-transform: uppercase;
       }
     }
 

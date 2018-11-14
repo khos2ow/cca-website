@@ -1,4 +1,4 @@
 ---
-title: "cloud.ca Pricing"
+title: "Pricing"
 draft: false
 ---

@@ -849,3 +849,61 @@
       }
   }
 }
+
+
+.onoffswitch {
+  position: relative; width: 100px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  display: none;
+}
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid @global-official-red; 
+  border-radius: 50px;
+}
+.onoffswitch-inner {
+  display: block; width: 200%; margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 35px;
+  padding: 0;
+  line-height: 35px;
+  font-size: 14px;
+  color: @global-absolute-white;
+  font-weight: regular;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "Monthly";
+  padding-left: 12px;
+  background-color: @global-official-red; 
+  color: @global-absolute-white;
+}
+.onoffswitch-inner:after {
+  content: "Hourly";
+  padding-right: 14px;
+  background-color: @global-absolute-white;
+  color: @global-official-red;
+  text-align: right;
+}
+.onoffswitch-switch {
+  display: block; width: 22px; margin: 9px;
+  background: @global-absolute-white;
+  position: absolute; top: 0; bottom: 0;
+  right: 61px;
+  border: 2px solid @global-official-red;
+  border-radius: 50%;
+  transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px; 
+}

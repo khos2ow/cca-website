@@ -43,13 +43,34 @@
   /** Healthcare **/
 
   .healthcare {
-    background: #ed6979;
-    background-image: -webkit-image-set()
+    margin: 0 -15px;
+    background: #ff6a00, url(/../../../static/images/healthcare-line.svg);
 
-    background: -webkit-linear-gradient(#ed6979, #ff6a00);
-    background: -o-linear-gradient(#ed6979, #ff6a00);
-    background: -moz-linear-gradient(#ed6979, #ff6a00);
-    background: linear-gradient(#ed6979, #ff6a00);
+    background: -webkit-linear-gradient(#ed6979, #ff6a00), url(/../../../images/healthcare-line.svg) no-repeat bottom center;
+    background: -o-linear-gradient(#ed6979, #ff6a00), url(/../../../images/healthcare-line.svg) no-repeat bottom center;
+    background: -moz-linear-gradient(#ed6979, #ff6a00), url(/../../../static/images/healthcare-line.svg) no-repeat bottom center;
+    background: linear-gradient(#ed6979, #ff6a00), url(/../../../static/images/healthcare-line.svg) no-repeat bottom center;
+
+    h4 {
+      font-size: 40px;
+      color: #fff;
+      padding: 40px 0 10px 0;
+
+    }
+
+    p {
+      font-size: 18px;
+      color: #fff;
+      font-weight: normal;
+    }
+    .healthcare-button {
+      background-color: @global-official-white;
+      font-size: 13px;
+      color: #ff6a00;
+      text-transform: uppercase;
+      padding: 7px 20px 5px;
+      margin: 15px 0px 60px;
+      }
   }
  
 

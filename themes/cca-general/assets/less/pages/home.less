@@ -4,11 +4,12 @@
     background-color: @global-absolute-white;
     text-align: center;
     color: @global-official-red;
-    padding: 100px 0 0 0;
     position: relative;
 
     h3 {
-      padding-bottom: 80px;
+      padding: 60px 0 20px 0;
+      font-size: 40px;
+      padding-bottom: 40px;
 
       @media screen and (max-width : 768px) {
         font-size: 30px;
@@ -38,6 +39,45 @@
       }
     }
   }
+
+  /** Healthcare **/
+
+  .healthcare {
+    margin: 0 -15px;
+    background: #ff6a00, url(/../../../static/images/healthcare-line.svg);
+
+    background: -webkit-linear-gradient(#ed6979, #ff6a00), url(/../../../images/healthcare-line.svg) no-repeat bottom center;
+    background: -o-linear-gradient(#ed6979, #ff6a00), url(/../../../images/healthcare-line.svg) no-repeat bottom center;
+    background: -moz-linear-gradient(#ed6979, #ff6a00), url(/../../../static/images/healthcare-line.svg) no-repeat bottom center;
+    background: linear-gradient(#ed6979, #ff6a00), url(/../../../static/images/healthcare-line.svg) no-repeat bottom center;
+
+    h4 {
+      font-size: 40px;
+      color: #fff;
+      padding: 40px 0 10px 0;
+
+    }
+
+    p {
+      font-size: 18px;
+      color: #fff;
+      font-weight: normal;
+    }
+    .healthcare-button {
+      background-color: @global-official-white;
+      font-size: 13px;
+      color: #ff6a00;
+      text-transform: uppercase;
+      padding: 7px 20px 5px;
+      margin: 15px 0px 60px;
+      }
+  }
+ 
+
+
+
+
+
 
   /* Call to Action */
   .call-to-action-card {
@@ -88,6 +128,11 @@
 
       &:link {
         color: @global-official-white;
+      }
+      &:hover {
+        text-decoration: none;
+        font-weight: bold;
+        background-color: transparent;
       }
     }
 

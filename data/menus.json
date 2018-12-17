@@ -106,11 +106,11 @@
 }, {
     "id": "pricing",
     "text": "menu_pricing",
-    "link": "#",
+    "link": "pricing/",
     "resources": false,
     "items": [{
         "text": "menu_pricing_option1",
-        "link": "pricing/option1"
+        "link": "pricing/"
     }, {
         "text": "menu_pricing_option2",
         "link": "pricing/option2"
